@@ -1,12 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>vkvk17的博客</title>
-        <link>https://vkvk17.github.io/</link>
-        <description>Welcome to vkvk17&#39;s blog.</description>
+        <title>所有文章 - vkvk17的博客</title>
+        <link>https://vkvk17.github.io/posts/</link>
+        <description>所有文章 | vkvk17的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>vkvk17@foxmail.com (vkvk17)</managingEditor>
-            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Thu, 17 Jul 2025 00:00:00 &#43;0000</lastBuildDate>
-            <atom:link href="https://vkvk17.github.io/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Thu, 17 Jul 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://vkvk17.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>测试的博客内容</title>
     <link>https://vkvk17.github.io/posts/%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9/</link>
     <pubDate>Thu, 17 Jul 2025 00:00:00 &#43;0000</pubDate><author>

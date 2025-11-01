@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>所有文章 - vkvk17的博客</title>
-        <link>https://vkvk17.github.io/posts/</link>
-        <description>所有文章 | vkvk17的博客</description>
+        <title>技术 - 分类 - vkvk17的博客</title>
+        <link>https://vkvk17.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+        <description>技术 - 分类 - vkvk17的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>vkvk17@foxmail.com (vkvk17)</managingEditor>
-            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Sat, 01 Nov 2025 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://vkvk17.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Sat, 01 Nov 2025 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://vkvk17.github.io/categories/%E6%8A%80%E6%9C%AF/" rel="self" type="application/rss+xml" /><item>
     <title>Hugo 使用指南</title>
     <link>https://vkvk17.github.io/posts/hugo-guide/</link>
     <pubDate>Sat, 01 Nov 2025 00:00:00 &#43;0800</pubDate><author>

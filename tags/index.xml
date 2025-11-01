@@ -4,12 +4,26 @@
         <link>https://vkvk17.github.io/tags/</link>
         <description>Tags - 标签 - vkvk17的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>vkvk17@foxmail.com (vkvk17)</managingEditor>
-            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Thu, 17 Jul 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://vkvk17.github.io/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>测试标签</title>
-    <link>https://vkvk17.github.io/tags/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE/</link>
-    <pubDate>Thu, 17 Jul 2025 00:00:00 &#43;0000</pubDate><author>
+            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Sat, 01 Nov 2025 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://vkvk17.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo</title>
+    <link>https://vkvk17.github.io/tags/hugo/</link>
+    <pubDate>Sat, 01 Nov 2025 00:00:00 &#43;0800</pubDate><author>
         <name>vkvk17</name>
-    </author><guid>https://vkvk17.github.io/tags/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE/</guid>
+    </author><guid>https://vkvk17.github.io/tags/hugo/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>教程</title>
+    <link>https://vkvk17.github.io/tags/%E6%95%99%E7%A8%8B/</link>
+    <pubDate>Sat, 01 Nov 2025 00:00:00 &#43;0800</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/%E6%95%99%E7%A8%8B/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>静态网站</title>
+    <link>https://vkvk17.github.io/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</link>
+    <pubDate>Sat, 01 Nov 2025 00:00:00 &#43;0800</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

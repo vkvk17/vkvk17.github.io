@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - 分类 - vkvk17的博客</title>
+        <link>https://vkvk17.github.io/categories/</link>
+        <description>Categories - 分类 - vkvk17的博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>vkvk17@foxmail.com (vkvk17)</managingEditor>
+            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Thu, 17 Jul 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://vkvk17.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>测试分类</title>
+    <link>https://vkvk17.github.io/categories/%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB/</link>
+    <pubDate>Thu, 17 Jul 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/categories/%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>

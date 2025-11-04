@@ -40,11 +40,11 @@ draft: false
 
 Hugo 提供了强大的短代码功能：
 
-{{</* highlight go */>}}
+{{< highlight go >}}
 func main() {
     fmt.Println("Hello, Hugo!")
 }
-{{</* /highlight */>}}
+{{< /highlight >}}
 
 ## 数学公式支持
 

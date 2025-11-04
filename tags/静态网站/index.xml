@@ -215,11 +215,18 @@
 </div>
 <h3 id="3-短代码" class="headerLink">
     <a href="#3-%e7%9f%ad%e4%bb%a3%e7%a0%81" class="header-mark"></a>3. 短代码</h3><p>Hugo 提供了强大的短代码功能：</p>
-<p>{{&lt; highlight go &gt;}}
-func main() {
-fmt.Println(&ldquo;Hello, Hugo!&rdquo;)
-}
-{{&lt; /highlight &gt;}}</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, Hugo!&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
 <h2 id="数学公式支持" class="headerLink">
     <a href="#%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e6%94%af%e6%8c%81" class="header-mark"></a>数学公式支持</h2><p>Hugo 可以通过配置支持 $\LaTeX$ 数学公式：</p>
 <p>$$

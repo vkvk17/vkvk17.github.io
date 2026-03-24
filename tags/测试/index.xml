@@ -1,0 +1,50 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>测试 - 标签 - vkvk17的博客</title>
+        <link>https://vkvk17.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
+        <description>测试 - 标签 - vkvk17的博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>vkvk17@foxmail.com (vkvk17)</managingEditor>
+            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Tue, 24 Mar 2026 10:00:00 &#43;0800</lastBuildDate><atom:link href="https://vkvk17.github.io/tags/%E6%B5%8B%E8%AF%95/" rel="self" type="application/rss+xml" /><item>
+    <title>LoveIt 主题测试文章</title>
+    <link>https://vkvk17.github.io/posts/test-loveit/</link>
+    <pubDate>Tue, 24 Mar 2026 10:00:00 &#43;0800</pubDate>
+    <author>vkvk17@foxmail.com (vkvk17)</author>
+    <guid>https://vkvk17.github.io/posts/test-loveit/</guid>
+    <description><![CDATA[<h2 id="欢迎使用-loveit-主题">欢迎使用 LoveIt 主题</h2>
+<p>这是一篇测试文章，用来验证 LoveIt 主题是否正常工作。</p>
+<h3 id="功能测试">功能测试</h3>
+<h4 id="代码高亮">代码高亮</h4>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-python">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, LoveIt Theme!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="n">hello_world</span><span class="p">()</span></span></span></code></pre></div></div>
+<h4 id="列表">列表</h4>
+<ul>
+<li>项目 1</li>
+<li>项目 2</li>
+<li>项目 3</li>
+</ul>
+<h4 id="数学公式">数学公式</h4>
+<p>下面是一个简单的数学公式：</p>
+<p>$$E = mc^2$$</p>
+<h3 id="引用">引用</h3>
+<blockquote>
+<p>这是一个引用块。LoveIt 主题提供了很好的样式支持。</p>
+</blockquote>
+<h3 id="链接和图片">链接和图片</h3>
+<ul>
+<li><a href="https://github.com" target="_blank" rel="noopener noreffer ">GitHub</a></li>
+<li><a href="https://gohugo.io" target="_blank" rel="noopener noreffer ">Hugo 官网</a></li>
+</ul>
+<hr>
+<p>希望这篇测试文章能帮助你验证 LoveIt 主题的功能！
+tag</p>
+]]></description>
+</item>
+</channel>
+</rss>

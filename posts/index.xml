@@ -4,46 +4,445 @@
         <link>https://vkvk17.github.io/posts/</link>
         <description>所有文章 | vkvk17的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>vkvk17@foxmail.com (vkvk17)</managingEditor>
-            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Tue, 24 Mar 2026 10:00:00 &#43;0800</lastBuildDate><atom:link href="https://vkvk17.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>LoveIt 主题测试文章</title>
-    <link>https://vkvk17.github.io/posts/test-loveit/</link>
-    <pubDate>Tue, 24 Mar 2026 10:00:00 &#43;0800</pubDate>
+            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Sat, 28 Mar 2026 14:10:05 &#43;0000</lastBuildDate><atom:link href="https://vkvk17.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>openSUSE Tumbleweed 和 KDE 的个人安装过程</title>
+    <link>https://vkvk17.github.io/posts/2026-03-28-opensuse-tumbleweed-%E5%92%8C-kde-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B/</link>
+    <pubDate>Sat, 28 Mar 2026 14:10:05 &#43;0000</pubDate>
     <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>https://vkvk17.github.io/posts/test-loveit/</guid>
-    <description><![CDATA[<h2 id="欢迎使用-loveit-主题">欢迎使用 LoveIt 主题</h2>
-<p>这是一篇测试文章，用来验证 LoveIt 主题是否正常工作。</p>
-<h3 id="功能测试">功能测试</h3>
-<h4 id="代码高亮">代码高亮</h4>
+    <guid>https://vkvk17.github.io/posts/2026-03-28-opensuse-tumbleweed-%E5%92%8C-kde-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B/</guid>
+    <description><![CDATA[<h1 id="opensuse-tumbleweed-和-kde-的个人安装过程">openSUSE Tumbleweed 和 KDE 的个人安装过程</h1>
+<h2 id="安装之前">安装之前</h2>
+<p>没什么特别好说的，我喜欢使用 <a href="https://www.ventoy.net/en/index.html" target="_blank" rel="noopener noreffer ">ventoy</a> 制作启动 U 盘，之后将 <a href="https://get.opensuse.org/tumbleweed/" target="_blank" rel="noopener noreffer ">openSUSE 风滚草</a> 的镜像拷贝进去就可以了。</p>
+<h2 id="kde-plasma-桌面配置">KDE Plasma 桌面配置</h2>
+<p>我对于 Plasma 的配置非常简单，有以下几个步骤：</p>
+<ol>
+<li>将任务栏移到上面，并缩小到 40</li>
+<li>设置 &gt; Appearance &gt; Icons 换一个喜欢的图标包，默认的图标包有一点丑，我选择的是 Papirus</li>
+<li>设置 &gt; Workspace Behavior &gt; Virtual Desktops 调整虚拟桌面的排列，我将行数设置为 1 行，默认 2 个虚拟桌面即可</li>
+<li>设置 &gt; Window Management &gt; Task Switcher 将任务切换效果从 Breeze 切换成 Compact，最简单的切换效果，顺便把 <code>Alt + `</code> 的快捷键删除了</li>
+<li>设置 &gt; Input Devices &gt; Keyboard &gt; Advanced 勾选 Configure keyboard options 和下面的 Make Caps Lock an additional Ctrl 我们当然要将大写锁定键完全换成 Ctrl</li>
+</ol>
+<p>KDE Plasma 用户在登录系统后，首次链接无线网络时会遇到 KDE 钱包的报错提醒（缺少密钥）。</p>
+<p>为了避免重复输入验证密码。打开 KDE 钱包，选择 新建钱包 ，然选择传统，blowfish 加密文件，然后不输入密码，直接确认保存。这样你就有了一个空（无验证密码）的 KDE 钱包。联网就无需验证身份了。</p>
+<h2 id="yast-配置和软件源更改">Yast 配置和软件源更改</h2>
+<p>首先我们需要安装一下简体中文语言包，我们在 Yast &gt; Language &gt; Seconday Language 中选中 Simplified Chinese 就可以安装上中文语言包了。</p>
+<p>接着我们打开 Software Repositories 把我们安装后自带的一个本地仓库（类似于 <code>openSUSE-20240216-0</code> ）删除。</p>
+<p>我们再将官方源换成 <a href="https://mirrors.ustc.edu.cn/help/opensuse.html" target="_blank" rel="noopener noreffer ">中科大 openSUSE 源</a> ，由于 openSUSE 使用了 MirrorBrain 技术，中央服务器 (download.opensuse.org) 会按照 IP 地理位置中转下载请求到附近的镜像服务器（但刷新软件源时仍从中央服务器获取 元数据），所以更改软件源通常只会加快刷新软件源的速度，而对下载速度影响不大。</p>
+<p>我们再添加一下 Packman 源，直接在终端中：</p>
+<p>bash</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-python">
+    <div class="code-header language-ruby">
         <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
         <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, LoveIt Theme!&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl"><span class="n">hello_world</span><span class="p">()</span></span></span></code></pre></div></div>
-<h4 id="列表">列表</h4>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">zypper</span> <span class="n">ar</span> <span class="o">-</span><span class="n">cfp</span> <span class="mi">90</span> <span class="ss">https</span><span class="p">:</span><span class="sr">//mi</span><span class="n">rrors</span><span class="o">.</span><span class="n">ustc</span><span class="o">.</span><span class="n">edu</span><span class="o">.</span><span class="n">cn</span><span class="o">/</span><span class="n">packman</span><span class="o">/</span><span class="n">suse</span><span class="o">/</span><span class="n">openSUSE_Tumbleweed</span><span class="o">/</span> <span class="ss">USTC</span><span class="p">:</span><span class="no">PACKMAN</span></span></span></code></pre></div></div>
+<p>之后我们刷新并更新风滚草即可：</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo zypper ref <span class="o">&amp;&amp;</span> sudo zypper dup
+</span></span><span class="line"><span class="cl">sudo reboot</span></span></code></pre></div></div>
+<p>接着我们安装一些多媒体编码器：</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo zypper dist-upgrade --from USTC:PACKMAN --allow-vendor-change
+</span></span><span class="line"><span class="cl">sudo zypper install --from USTC:PACKMAN ffmpeg gstreamer-plugins-<span class="o">{</span>good,bad,ugly,libav<span class="o">}</span> libavcodec-full vlc-codecs</span></span></code></pre></div></div>
+<h2 id="网络代理配置">网络代理配置</h2>
+<p>我们使用 v2raya 来进行网络代理，先安装 v2ray 内核和 v2raya</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo zypper in v2ray
+</span></span><span class="line"><span class="cl">opi v2raya</span></span></code></pre></div></div>
+<p>打开 v2raya 服务后按照 <a href="https://v2raya.org/docs/prologue/quick-start/" target="_blank" rel="noopener noreffer ">快速上手</a> 即可使用网络代理，使用透明代理可以为几乎所有的程序进行网络代理。</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now v2raya.service</span></span></code></pre></div></div>
+<p>更多代理使用方法可以参考 <a href="https://zh.opensuse.org/SDB:%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86" target="_blank" rel="noopener noreffer ">配置代理</a> 。</p>
+<h2 id="字体与中文输入法">字体与中文输入法</h2>
+<p>在 KDE 中安装字体很简单，只需要把字体往 Font Management 里面拖动就行了（最好是放在 Personal Fonts 分组里面），之后你可以使用 <code>fc-cache -fv</code> 刷新字体。</p>
+<p>比较传统的方法是放到下面的文件夹中，按照优先级排序是：</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-swift">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="n">Font</span> <span class="n">directories</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">X11R6</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">X11</span><span class="o">/</span><span class="n">fonts</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">kde3</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span>
+</span></span><span class="line"><span class="cl">        <span class="o">~/</span><span class="p">.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span>
+</span></span><span class="line"><span class="cl">        <span class="o">~/</span><span class="p">.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">flatpak</span><span class="o">/</span><span class="n">exports</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="kd">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">flatpak</span><span class="o">/</span><span class="n">exports</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span>
+</span></span><span class="line"><span class="cl">        <span class="o">~/</span><span class="p">.</span><span class="n">fonts</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="mi">100</span><span class="n">dpi</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="mi">75</span><span class="n">dpi</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">Type1</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">cyrillic</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">encodings</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">ghostscript</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">misc</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">texlive</span><span class="o">-</span><span class="n">lm</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">truetype</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">xscreensaver</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span><span class="o">/</span><span class="n">encodings</span><span class="o">/</span><span class="n">large</span></span></span></code></pre></div></div>
+<p>推荐放在 <code>~/.fonts</code> 或是 <code>~/.local/share/fonts</code> 文件夹中，然后同样用 <code>fc-cache -fv</code> 刷新字体即可。</p>
+<p>我个人推荐的字体是 <a href="https://github.com/laishulu/Sarasa-Term-SC-Nerd" target="_blank" rel="noopener noreffer ">Sarasa Term SC Nerd</a> ，因为它在 Emacs 中使用可以处理表格对齐的问题，同时包含 Nerd Fonts，比较省心。</p>
+<p>输入法推荐安装 <a href="https://zh.opensuse.org/Fcitx5" target="_blank" rel="noopener noreffer ">Fcitx5</a> ：</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo zypper in fcitx5 fcitx5-chinese-addons
+</span></span><span class="line"><span class="cl">sudo zypper in fcitx5-configtool <span class="c1">#  安装配置工具（可选）</span></span></span></code></pre></div></div>
+<p>在安装 Fcitx5 的时候，会默认卸载替换掉旧的 Fcitx，我们跟随系统提示操作即可。</p>
+<p>安装后重新登陆，我们在设置 &gt; Reginonal Settings &gt; Input Method 中点击 Add Input Method 添加 Pinyin 即可，这里的一些环境变量使用 X11 的 KDE 的话系统已经自动帮我们设置好了。</p>
+<p>我们还可以点击 Configure addons 设置一些输入法 UI 等。</p>
+<p>词典可以帮助改善输入法的使用体验，以下是两个受欢迎的词库：</p>
 <ul>
-<li>项目 1</li>
-<li>项目 2</li>
-<li>项目 3</li>
+<li><a href="https://github.com/felixonmars/fcitx5-pinyin-zhwiki" target="_blank" rel="noopener noreffer ">felixonmars/fcitx5-pinyin-zhwiki</a></li>
+<li><a href="https://github.com/wuhgit/CustomPinyinDictionary" target="_blank" rel="noopener noreffer ">wuhgit/CustomPinyinDictionary</a></li>
 </ul>
-<h4 id="数学公式">数学公式</h4>
-<p>下面是一个简单的数学公式：</p>
-<p>$$E = mc^2$$</p>
-<h3 id="引用">引用</h3>
-<blockquote>
-<p>这是一个引用块。LoveIt 主题提供了很好的样式支持。</p>
-</blockquote>
-<h3 id="链接和图片">链接和图片</h3>
+<p>请根据仓库的 README 文件将下载或下载解压后的 .dict 文件放置到 <code>~/.local/share/fcitx5/pinyin/dictionaries/</code> 文件夹中（如果文件夹不存在，你需要手动新建此文件夹），再重启一下 fcitx5 即可。</p>
+<h2 id="安装软件">安装软件</h2>
+<p>我将我一开始安装的一些软件列下来（我随便写了一些，可以按需下载安装）：</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-less">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">通过 zypper 安装：
+</span></span><span class="line"><span class="cl">git
+</span></span><span class="line"><span class="cl">emacs
+</span></span><span class="line"><span class="cl">opi
+</span></span><span class="line"><span class="cl">keepassxc
+</span></span><span class="line"><span class="cl">mpv
+</span></span><span class="line"><span class="cl">telegram-desktop
+</span></span><span class="line"><span class="cl">qbittorrent
+</span></span><span class="line"><span class="cl">filezilla
+</span></span><span class="line"><span class="cl">wireshark
+</span></span><span class="line"><span class="cl">flameshot # 安装指南 (https://zh.opensuse.org/Flameshot)
+</span></span><span class="line"><span class="cl">cheat
+</span></span><span class="line"><span class="cl">nodejs
+</span></span><span class="line"><span class="cl">syncthing
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">通过 opi 安装
+</span></span><span class="line"><span class="cl">megasync
+</span></span><span class="line"><span class="cl">google-chrome-stable
+</span></span><span class="line"><span class="cl">v2raya</span></span></code></pre></div></div>
+<h2 id="电源管理针对笔记本电脑">电源管理（针对笔记本电脑）</h2>
+<p>我们使用默认的 TLP 配置即可，你可以使用 <a href="https://github.com/d4nj1/TLPUI" target="_blank" rel="noopener noreffer ">TLPUI</a> 来更简单地配置。</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo zypper in tlp
+</span></span><span class="line"><span class="cl">sudo systemctl disable tlp <span class="o">&amp;&amp;</span> sudo systemctl stop tlp
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> tlp</span></span></code></pre></div></div>
+<p>我们在 TLPUI 中简单设置一下充电阈值即可，这样可以延长一些笔记本电池的寿命</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-ini">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="na">START_CHARGE_THRESH_BAT0</span><span class="o">=</span><span class="s">75</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 开始充电阈值</span>
+</span></span><span class="line"><span class="cl"><span class="na">STOP_CHARGE_THRESH_BAT0</span><span class="o">=</span><span class="s">85</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 停止充电阈值</span></span></span></code></pre></div></div>
+<p>我们可以用下面这条命令检查电池状态：</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo tlp-stat -b</span></span></code></pre></div></div>
+<h2 id="终端模拟器">终端模拟器</h2>
+<p>这个选择自己称手的就行了，以前我比较喜欢折腾 shell，现在懒得去配置了，就用默认的 bash 就行了，安装一个 Ohmybash 能让它好看一些， 目前我最喜欢的 shell 居然是 emacs 里面的 eshell 吧（笑）。</p>
+<p>此外，如果我使用 zsh，我个人很讨厌 Ohmyzsh，我会换成 <a href="https://github.com/zimfw/zimfw" target="_blank" rel="noopener noreffer ">zim</a> 这种轻量化的配置框架。</p>
+<p>终端模拟器的话我一直在用 <a href="https://sw.kovidgoyal.net/kitty/conf/" target="_blank" rel="noopener noreffer ">kitty</a> ，它对于颜色支持的比较好，而且还自带 kitten 插件，每次我到新机器上直接用 kitten 就能把主题啥的配置好，性能也非常快。</p>
+<p>我最喜欢的终端字体是 <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/CascadiaMono.zip" target="_blank" rel="noopener noreffer ">CaskaydiaMono Nerd Font</a> 。</p>
+<p>此外，新的终端模拟器 <a href="https://www.warp.dev/blog/warp-for-linux" target="_blank" rel="noopener noreffer ">Warp</a> 在我写这篇文章的时候，已经可以在 Linux 上使用了，我在 MacOS 上一直很喜欢使用这个非常现代的终端。</p>
+<p>终端模拟器的配置随便换个字体就行了，还有一点是我比较讨厌透明背景色的终端配置。</p>
+<h2 id="参考链接">参考链接</h2>
 <ul>
-<li><a href="https://github.com" target="_blank" rel="noopener noreffer ">GitHub</a></li>
-<li><a href="https://gohugo.io" target="_blank" rel="noopener noreffer ">Hugo 官网</a></li>
+<li><a href="https://zh.opensuse.org/SDB:%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97" target="_blank" rel="noopener noreffer ">openSUSE WIKI 快速配置指南</a></li>
+<li><a href="https://zh.opensuse.org/SDB:%E7%94%B5%E6%B1%A0%E7%AE%A1%E7%90%86" target="_blank" rel="noopener noreffer ">openSUSE WIKI 电池管理</a></li>
+<li><a href="https://v2raya.org/docs/prologue/introduction/" target="_blank" rel="noopener noreffer ">v2raya 用户文档</a></li>
 </ul>
-<hr>
-<p>希望这篇测试文章能帮助你验证 LoveIt 主题的功能！
-tag</p>
+]]></description>
+</item>
+<item>
+    <title>denote 使用方法</title>
+    <link>https://vkvk17.github.io/posts/2026-03-28-denote-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+    <pubDate>Sat, 28 Mar 2026 14:10:00 &#43;0000</pubDate>
+    <author>vkvk17@foxmail.com (vkvk17)</author>
+    <guid>https://vkvk17.github.io/posts/2026-03-28-denote-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+    <description><![CDATA[<h1 id="denote-使用方法">denote 使用方法</h1>
+<h2 id="关于">关于</h2>
+<p>自己随便记录的关于 denote 的一些使用方法，绝大部分都是直接翻译的官方文档。</p>
+<h2 id="参考文档">参考文档</h2>
+<p><a href="https://protesilaos.com/emacs/denote" target="_blank" rel="noopener noreffer ">denote 文档</a></p>
+<h2 id="标准笔记创建">标准笔记创建</h2>
+<p>提示用户输入以创建笔记的命令包括但不限于：</p>
+<ul>
+<li><code>denote</code></li>
+<li><code>denote-signature</code></li>
+<li><code>denote-type</code></li>
+<li><code>denote-date</code></li>
+<li><code>denote-subdirectory</code></li>
+<li><code>denote-rename-file</code></li>
+<li><code>denote-dired-rename-files</code></li>
+</ul>
+<h3 id="the-denote-templates-选项">The denote-templates 选项</h3>
+<p>用户可以以模版开始创建一个新的笔记。</p>
+<p>创建模版的配置：</p>
+<p>elisp</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-swift">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="p">(</span><span class="n">setq</span> <span class="n">denote</span><span class="o">-</span><span class="n">templates</span>
+</span></span><span class="line"><span class="cl">      <span class="err">&#39;</span><span class="p">((</span><span class="n">report</span> <span class="p">.</span> <span class="s">&#34;* Some heading</span><span class="se">\n\n</span><span class="s">* Another heading&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="n">memo</span> <span class="p">.</span> <span class="s">&#34;* Some heading</span><span class="se">\n\n</span><span class="s">* Another heading)))</span></span></span></code></pre></div></div>
+<p>更好的方法是用 <code>concat</code> 函数来将字符串连接起来：</p>
+<p>emacs-lisp</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-swift">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="p">(</span><span class="n">setq</span> <span class="n">denote</span><span class="o">-</span><span class="n">templates</span>
+</span></span><span class="line"><span class="cl">      <span class="p">`((</span><span class="n">report</span> <span class="p">.</span> <span class="s">&#34;* Some heading</span><span class="se">\n\n</span><span class="s">* Another heading&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="n">memo</span> <span class="p">.</span> <span class="p">,(</span><span class="n">concat</span> <span class="s">&#34;* Some heading&#34;</span>
+</span></span><span class="line"><span class="cl">                         <span class="s">&#34;</span><span class="se">\n\n</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">                         <span class="s">&#34;* Another heading&#34;</span>
+</span></span><span class="line"><span class="cl">                         <span class="s">&#34;</span><span class="se">\n\n</span><span class="s">&#34;</span><span class="p">))))</span></span></span></code></pre></div></div>
+<h3 id="维护单独的笔记目录-silos">维护单独的笔记目录 silos</h3>
+<p><code>silos</code> 这个概念就是笔记存放在不同地方，目录与目录之间是分离的，我们把这样的目录叫做 <code>silos</code> 。</p>
+<p>要创建一个 <code>silos</code> ，首先我们需要在笔记目录下创建一个 <code>.dir-locals.el</code> 文件，在创建的时候 Emacs 会提醒我们是否存储这个路径变量，我们选择是即可。</p>
+<p>我们向 <code>.dir-locals.el</code> 文件中写入：</p>
+<p>emacs-lisp</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-wasm">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">;;; Directory Local Variables.  For more information evaluate:
+</span></span><span class="line"><span class="cl">;;;
+</span></span><span class="line"><span class="cl">;;;     (info &#34;(emacs) Directory Variables&#34;)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">((nil . ((denote-directory . &#34;/path/to/silo/&#34;)
+</span></span><span class="line"><span class="cl">         (denote-infer-keywords . nil))))</span></span></code></pre></div></div>
+<p>下面是我的笔记目录（ <code>01Index</code> 是我的 <code>denote-directory</code> ）：</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-lua">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="p">.</span><span class="o">/</span><span class="mi">01</span><span class="n">Index</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="p">.</span><span class="n">DS_Store</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240228</span><span class="n">T160157</span><span class="c1">--mastering-eshell__emacs_linux_shell.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240228</span><span class="n">T160157</span><span class="c1">--mastering-eshell__emacs_linux_shell.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240315</span><span class="n">T225352</span><span class="c1">--c语言程序设计现代方法__c.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240317</span><span class="n">T201104</span><span class="c1">--cpp-primer__cpp.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240407</span><span class="n">T230222</span><span class="c1">--西方哲学史__reading.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="n">ltximg</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="o">/</span><span class="mi">02</span><span class="n">Area</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="p">.</span><span class="n">dir</span><span class="o">-</span><span class="n">locals.el</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240201</span><span class="n">T021341</span><span class="c1">--emacs-manual-note__emacs.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240201</span><span class="n">T021341</span><span class="c1">--emacs-manual-note__emacs.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240302</span><span class="n">T153745</span><span class="c1">--计算机网络原理__network.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240302</span><span class="n">T153745</span><span class="c1">--计算机网络原理__network.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240320</span><span class="n">T175109</span><span class="c1">--操作系统__operatingsystem.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240320</span><span class="n">T175109</span><span class="c1">--操作系统__operatingsystem.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240328</span><span class="n">T141613</span><span class="c1">--计算机系统结构__computerarchitecture.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="mi">20240328</span><span class="n">T141613</span><span class="c1">--计算机系统结构__computerarchitecture.org</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="o">/</span><span class="mi">03</span><span class="n">Resource</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="p">.</span><span class="n">dir</span><span class="o">-</span><span class="n">locals.el</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240221</span><span class="n">T162109</span><span class="c1">--kde-plasma-桌面-korganizer-等软件关闭后仍然占用约-800-m-内存__bug_kde.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240221</span><span class="n">T162109</span><span class="c1">--kde-plasma-桌面-korganizer-等软件关闭后仍然占用约-800-m-内存__bug_kde.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="mi">20240222</span><span class="n">T000349</span><span class="c1">--opensuse-tumbleweed-和-kde-的个人安装过程__kde_linux_opensuse.org</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="o">/</span><span class="mi">04</span><span class="n">Project</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="p">.</span><span class="n">dir</span><span class="o">-</span><span class="n">locals.el</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="mi">20240417</span><span class="n">T220159</span><span class="c1">--denote-使用方法__emacs.org</span></span></span></code></pre></div></div>
+<p>之后我们还要用自定义用户配置命令自动选择 <code>silo</code> ，这样我们平常使用 <code>denote</code> 命令的时候默认将笔记放到 <code>01Index</code> 中， 当我们切换到 <code>02Area</code> 时，我们这时使用 <code>denote</code> 相关命令，笔记就会自动存放到当前的 <code>silo</code> 中了。</p>
+<p>我的用户配置如下：</p>
+<p>emacs-lisp</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-perl">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-perl" data-lang="perl"><span class="line"><span class="cl"><span class="p">(</span><span class="n">defvar</span> <span class="k">my</span><span class="o">-</span><span class="n">denote</span><span class="o">-</span><span class="n">silo</span><span class="o">-</span><span class="n">directories</span>
+</span></span><span class="line"><span class="cl">    <span class="sb">`(&#34;/home/MEGA/02Area&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sb">      &#34;/home/MEGA/03Resource&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sb">      &#34;/home/MEGA/04Project&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sb">      ;; You don&#39;t actually need to include the `</span><span class="n">denote</span><span class="o">-</span><span class="n">directory</span><span class="s">&#39; here
+</span></span></span><span class="line"><span class="cl"><span class="s">      ;; if you use the regular commands in their global context.  I am
+</span></span></span><span class="line"><span class="cl"><span class="s">      ;; including it for completeness.
+</span></span></span><span class="line"><span class="cl"><span class="s">      ,denote-directory)
+</span></span></span><span class="line"><span class="cl"><span class="s">    &#34;List of file paths pointing to my Denote silos.
+</span></span></span><span class="line"><span class="cl"><span class="s">  This is a list of strings.&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">  (defvar my-denote-commands-for-silos
+</span></span></span><span class="line"><span class="cl"><span class="s">    &#39;</span><span class="p">(</span><span class="n">denote</span>
+</span></span><span class="line"><span class="cl">      <span class="n">denote</span><span class="o">-</span><span class="n">date</span>
+</span></span><span class="line"><span class="cl">      <span class="n">denote</span><span class="o">-</span><span class="n">subdirectory</span>
+</span></span><span class="line"><span class="cl">      <span class="n">denote</span><span class="o">-</span><span class="n">template</span>
+</span></span><span class="line"><span class="cl">      <span class="n">denote</span><span class="o">-</span><span class="n">type</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;List of Denote commands to call after selecting a silo.
+</span></span></span><span class="line"><span class="cl"><span class="s">  This is a list of symbols that specify the note-creating
+</span></span></span><span class="line"><span class="cl"><span class="s">  interactive functions that Denote provides.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="n">defun</span> <span class="k">my</span><span class="o">-</span><span class="n">denote</span><span class="o">-</span><span class="n">pick</span><span class="o">-</span><span class="n">silo</span><span class="o">-</span><span class="k">then</span><span class="o">-</span><span class="n">command</span> <span class="p">(</span><span class="n">silo</span> <span class="n">command</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Select SILO and run Denote COMMAND in it.
+</span></span></span><span class="line"><span class="cl"><span class="s">  SILO is a file path from `my-denote-silo-directories&#39;, while
+</span></span></span><span class="line"><span class="cl"><span class="s">  COMMAND is one among `my-denote-commands-for-silos&#39;.&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">interactive</span>
+</span></span><span class="line"><span class="cl">     <span class="p">(</span><span class="n">list</span> <span class="p">(</span><span class="n">completing</span><span class="o">-</span><span class="nb">read</span> <span class="s">&#34;Select a silo: &#34;</span> <span class="k">my</span><span class="o">-</span><span class="n">denote</span><span class="o">-</span><span class="n">silo</span><span class="o">-</span><span class="n">directories</span> <span class="n">nil</span> <span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="n">intern</span> <span class="p">(</span><span class="n">completing</span><span class="o">-</span><span class="nb">read</span>
+</span></span><span class="line"><span class="cl">                    <span class="s">&#34;Run command in silo: &#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">my</span><span class="o">-</span><span class="n">denote</span><span class="o">-</span><span class="n">commands</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">silos</span> <span class="n">nil</span> <span class="n">t</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">let</span> <span class="p">((</span><span class="n">denote</span><span class="o">-</span><span class="n">directory</span> <span class="n">silo</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="n">call</span><span class="o">-</span><span class="n">interactively</span> <span class="n">command</span><span class="p">)))</span></span></span></code></pre></div></div>
+<p>关于 silo 的实现并不优雅，这是一个比较新的功能。我们现在只能凑合用了，我觉得作者应该将 silo 这种分散仓库概念集合到对于 <code>denote-directory</code> 的配置中。</p>
+<p>因为毕竟我不可能总是将笔记放在一个文件夹中，总是用 <code>denote-subdirectory</code> 也不是办法。</p>
+<h2 id="笔记文件命名规范">笔记文件命名规范</h2>
+<p>笔记被存放在 <code>denote-directory</code> 中，默认是 <code>~/Documents/notes</code> 。</p>
+<p>默认遵循下面这个命名规范：</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-ini">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="na">DATE</span><span class="o">=</span><span class="s">=SIGNATURE--TITLE__KEYWORDS.EXTENSION</span></span></span></code></pre></div></div>
+<p><code>DATE</code> 字段以 年-月-日 的格式表示日期，后跟大写字母 T 表示当前时间，同时 <code>DATE</code> 也作为每个笔记文件的唯一标识符。</p>
+<p><code>SIGNATURE</code> 字段中包含一串字母数字字符。签名没有明确定义的用途，由用户定义。一个用例是使用它们在文件之间建立顺序关系（例如 1、1a、1b、1b1、1b2 等）。</p>
+<p><code>TITEL</code> 字段默认小写，并且带有连字符。</p>
+<p><code>KEYWORDS</code> 字段由一个或多个条目组成，这些条目用下划线分隔，输入 <code>KEYWORDS</code> 时用逗号分隔。</p>
+<p>Examples:</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-css">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">20220610T043241--initial-thoughts-on-the-zettelkasten-method__notetaking</span><span class="p">.</span><span class="nc">org</span>
+</span></span><span class="line"><span class="cl"><span class="nt">20220610T062201--define-custom-org-hyperlink-type__denote_emacs_package</span><span class="p">.</span><span class="nc">md</span>
+</span></span><span class="line"><span class="cl"><span class="nt">20220610T162327--on-hierarchy-and-taxis__notetaking_philosophy</span><span class="p">.</span><span class="nc">txt</span></span></span></code></pre></div></div>
+<p><code>denote-prompts</code> 可以按照如下方式来配置：</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-sql">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="nb">DATE</span><span class="p">.</span><span class="n">EXT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nb">DATE</span><span class="c1">--TITLE.EXT
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">DATE__KEYWORDS</span><span class="p">.</span><span class="n">EXT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nb">DATE</span><span class="o">==</span><span class="n">SIGNATURE</span><span class="p">.</span><span class="n">EXT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nb">DATE</span><span class="o">==</span><span class="n">SIGNATURE</span><span class="c1">--TITLE.EXT
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nb">DATE</span><span class="o">==</span><span class="n">SIGNATURE</span><span class="c1">--TITLE__KEYWORDS.EXT
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nb">DATE</span><span class="o">==</span><span class="n">SIGNATURE__KEYWORDS</span><span class="p">.</span><span class="n">EXT</span></span></span></code></pre></div></div>
+<h2 id="链接笔记">链接笔记</h2>
+<p><code>denote</code> 提供了不同的命令在笔记之间创建链接。</p>
+<p>所有的被链接的文件都必须是 denote 文件，无法识别其他文件。</p>
+<h3 id="添加一个单独的链接">添加一个单独的链接</h3>
+<p><code>denote-link</code> 命令在 minibuffer 中选择一个文件插入到当前文件中作为链接。链接的格式取决于当前的文件是 Org 还是 Markdown。</p>
+<p>我们也可以再 Org 文件中支持链接到标题，使用 <code>denote-org-store-link-to-heading</code> 命令，其他文件格式不支持。</p>
+<p>当使用前缀键（默认是 <code>C-u</code> ）调用 <code>denote-link</code> ，无论文件类型如何，他都会设置链接为 <code>[[denote:IDENTIFIER]]</code> 的格式。</p>
+<p>默认情况下，链接的描述是这样确定的：</p>
+<h3 id="denote-org-store-link-to-heading-用户选项">denote-org-store-link-to-heading 用户选项</h3>
+<p>选项 <code>denote-org-store-link-to-heading</code> 确定 <code>org-store-link</code> 是否链接到当前 Org 文件的标题。</p>
+<p><code>org-store</code> 就是把当前的链接存储起来，之后用 <code>org-insert-link</code> 插入，而 <code>denote-org-store-link-to-heading</code> 选项会影响到这个命令。</p>
+<p>当该选项为非 <code>nil</code> 时， <code>org-store-link</code> 就是将当前标题的链接存储起来，而不是存储 <code>denote</code> 文件的链接。</p>
+<p>如果标题没有 <code>CUSTOM_ID</code> ，则创建 <code>PROPERTIES</code> 它并将其包含在标题的抽屉中。如果存在 <code>CUSTOM_ID</code> ， <code>org-store-link</code> 按原样使用。</p>
+<h3 id="插入执行-org-文件中标题的链接">插入执行 org 文件中标题的链接</h3>
+<p>作为 <code>denote-org-extras.el</code> 拓展的一部分， <code>denote-org-extras-link-to-heading</code> 会提供执行 Org 文件标题的链接。</p>
+<p>链接形式如下：</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-lua">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="s">[[denote:IDENTIFIER::#ORG-HEADING-CUSTOM-ID]]</span><span class="p">[</span><span class="n">Description</span><span class="p">::</span><span class="nl">Heading</span> <span class="nl">text</span><span class="err">]]</span></span></span></code></pre></div></div>
+<h3 id="插入一个符合正则表达式的链接">插入一个符合正则表达式的链接</h3>
+<p>命令 <code>denote-add-links</code> 添加数个链接，链接匹配正则表达式。这些链接作为列表排版插入，例如：</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-diff">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl"><span class="gd">- link1
+</span></span></span><span class="line"><span class="cl"><span class="gd">- link2
+</span></span></span><span class="line"><span class="cl"><span class="gd">- link3
+</span></span></span></code></pre></div></div>
+<p>可以使用的正则表达式示例：</p>
+<ul>
+<li><code>journal</code> 匹配所有包含 <code>journal</code> 标题名字的笔记。</li>
+<li><code>_journal</code> 匹配所有关键字为 <code>journal</code> 的笔记。</li>
+<li><code>^2022.*_journal</code> 匹配所有在 <code>2022</code> 开始的笔记，并且含有关键字 <code>journal</code> 。</li>
+<li><code>\.txt</code> 匹配拓展名为 <code>txt</code> 的文件。</li>
+</ul>
+<h3 id="链接到一个已存在的笔记或者创建一个新的笔记">链接到一个已存在的笔记或者创建一个新的笔记</h3>
+<p>在一个人的笔记工作流程中，他们可能在阐述某个主题时，但他们想要连接到另一个主题时。 Denote 提供了几个方便的命令：</p>
+<ul>
+<li>
+<p><code>denote-link-after-creating</code></p>
+<p>在后台创建一个新笔记并且直接链接到这里。</p>
+</li>
+<li>
+<p><code>denote-link-after-creating-with-command</code></p>
+<p>这个命令和上面一个类似，只是提示输入创建笔记的命令。</p>
+</li>
+<li>
+<p><code>denote-link-or-create</code></p>
+<p>使用 <code>denote-link</code> 在目标文件，必须时创建它。</p>
+</li>
+</ul>
+<h3 id="反向链接的-buffer">反向链接的 buffer</h3>
+<p><code>denote-backlinks</code> 会生成一个自定义的缓冲区，其中显示指向当前笔记的反向链接。 “反向链接”是返回当前条目的链接。</p>
+<p>默认情况下，反向链接的 buffer 设计为显示链接到当前条目的注释的文件名。每个文件名都显示在自己的行上。</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-lua">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">Backlinks</span> <span class="n">to</span> <span class="s2">&#34;On being honest&#34;</span> <span class="p">(</span><span class="mi">20220614</span><span class="n">T130812</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">20220614</span><span class="n">T145606</span><span class="c1">--let-this-glance-become-a-stare__journal.txt</span>
+</span></span><span class="line"><span class="cl"><span class="mi">20220616</span><span class="n">T182958</span><span class="c1">--feeling-butterflies-in-your-stomach__journal.txtx</span></span></span></code></pre></div></div>
+<p>反向链接缓冲区使用的是 Emacs 内置的 Xref 基础设施。在某些操作系统上，用户可能需要将某些可执行文件添加到相关的环境变量中。</p>
 ]]></description>
 </item>
 </channel>

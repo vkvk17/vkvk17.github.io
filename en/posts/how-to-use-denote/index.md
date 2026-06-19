@@ -1,7 +1,6 @@
 # How to Use Denote
 
 
-# How to Use Denote
 
 ## About
 

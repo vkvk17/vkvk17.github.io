@@ -1,88 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - 标签 - vkvk17的博客</title>
-        <link>http://localhost:1313/tags/</link>
+        <link>https://vkvk17.github.io/tags/</link>
         <description>Tags - 标签 - vkvk17的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>vkvk17@foxmail.com (vkvk17)</managingEditor>
-            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</lastBuildDate><atom:link href="https://vkvk17.github.io/tags/" rel="self" type="application/rss+xml" /><item>
     <title>习惯养成</title>
-    <link>http://localhost:1313/tags/%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90/</link>
-    <pubDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</pubDate>
-    <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>http://localhost:1313/tags/%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90/</guid>
+    <link>https://vkvk17.github.io/tags/%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90/</link>
+    <pubDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>心理学</title>
-    <link>http://localhost:1313/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</link>
-    <pubDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</pubDate>
-    <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>http://localhost:1313/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
+    <link>https://vkvk17.github.io/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</link>
+    <pubDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>原子习惯</title>
-    <link>http://localhost:1313/tags/%E5%8E%9F%E5%AD%90%E4%B9%A0%E6%83%AF/</link>
-    <pubDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</pubDate>
-    <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>http://localhost:1313/tags/%E5%8E%9F%E5%AD%90%E4%B9%A0%E6%83%AF/</guid>
+    <link>https://vkvk17.github.io/tags/%E5%8E%9F%E5%AD%90%E4%B9%A0%E6%83%AF/</link>
+    <pubDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/%E5%8E%9F%E5%AD%90%E4%B9%A0%E6%83%AF/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>自我提升</title>
-    <link>http://localhost:1313/tags/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/</link>
-    <pubDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</pubDate>
-    <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>http://localhost:1313/tags/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/</guid>
+    <link>https://vkvk17.github.io/tags/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/</link>
+    <pubDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>KDE</title>
-    <link>http://localhost:1313/tags/kde/</link>
-    <pubDate>Sat, 28 Mar 2026 14:10:05 &#43;0000</pubDate>
-    <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>http://localhost:1313/tags/kde/</guid>
+    <link>https://vkvk17.github.io/tags/kde/</link>
+    <pubDate>Sat, 28 Mar 2026 14:10:05 &#43;0000</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/kde/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>Linux</title>
-    <link>http://localhost:1313/tags/linux/</link>
-    <pubDate>Sat, 28 Mar 2026 14:10:05 &#43;0000</pubDate>
-    <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>http://localhost:1313/tags/linux/</guid>
+    <link>https://vkvk17.github.io/tags/linux/</link>
+    <pubDate>Sat, 28 Mar 2026 14:10:05 &#43;0000</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/linux/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>OpenSUSE</title>
-    <link>http://localhost:1313/tags/opensuse/</link>
-    <pubDate>Sat, 28 Mar 2026 14:10:05 &#43;0000</pubDate>
-    <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>http://localhost:1313/tags/opensuse/</guid>
+    <link>https://vkvk17.github.io/tags/opensuse/</link>
+    <pubDate>Sat, 28 Mar 2026 14:10:05 &#43;0000</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/opensuse/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>Denote</title>
-    <link>http://localhost:1313/tags/denote/</link>
-    <pubDate>Sat, 28 Mar 2026 14:10:00 &#43;0000</pubDate>
-    <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>http://localhost:1313/tags/denote/</guid>
+    <link>https://vkvk17.github.io/tags/denote/</link>
+    <pubDate>Sat, 28 Mar 2026 14:10:00 &#43;0000</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/denote/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>Emacs</title>
-    <link>http://localhost:1313/tags/emacs/</link>
-    <pubDate>Sat, 28 Mar 2026 14:10:00 &#43;0000</pubDate>
-    <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>http://localhost:1313/tags/emacs/</guid>
+    <link>https://vkvk17.github.io/tags/emacs/</link>
+    <pubDate>Sat, 28 Mar 2026 14:10:00 &#43;0000</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/emacs/</guid>
     <description><![CDATA[]]></description>
-</item>
-<item>
+</item><item>
     <title>Orgmode</title>
-    <link>http://localhost:1313/tags/orgmode/</link>
-    <pubDate>Sat, 28 Mar 2026 14:10:00 &#43;0000</pubDate>
-    <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>http://localhost:1313/tags/orgmode/</guid>
+    <link>https://vkvk17.github.io/tags/orgmode/</link>
+    <pubDate>Sat, 28 Mar 2026 14:10:00 &#43;0000</pubDate><author>
+        <name>vkvk17</name>
+    </author><guid>https://vkvk17.github.io/tags/orgmode/</guid>
     <description><![CDATA[]]></description>
-</item>
-</channel>
+</item></channel>
 </rss>

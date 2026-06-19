@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Series - series - vkvk17&#39;s Blog</title>
-        <link>http://localhost:1313/en/series/</link>
-        <description>Series - series - vkvk17&#39;s Blog</description>
+        <title>Series - Series - vkvk17&#39;s Blog</title>
+        <link>https://vkvk17.github.io/en/series/</link>
+        <description>Series - Series - vkvk17&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>vkvk17@foxmail.com (vkvk17)</managingEditor>
-            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><atom:link href="http://localhost:1313/en/series/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><atom:link href="https://vkvk17.github.io/en/series/" rel="self" type="application/rss+xml" /></channel>
 </rss>

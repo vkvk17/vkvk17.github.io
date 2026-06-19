@@ -1,8 +1,6 @@
 # My openSUSE Tumbleweed and KDE Installation Notes
 
 
-# My openSUSE Tumbleweed and KDE Installation Notes
-
 ## Before Installation
 
 There is not much to say here. I like using [Ventoy](https://www.ventoy.net/en/index.html) to create a bootable USB drive, then copying the [openSUSE Tumbleweed](https://get.opensuse.org/tumbleweed/) image onto it.

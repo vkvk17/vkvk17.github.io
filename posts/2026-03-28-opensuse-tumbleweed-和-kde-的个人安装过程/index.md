@@ -1,7 +1,7 @@
 # openSUSE Tumbleweed 和 KDE 的个人安装过程
 
 
-# openSUSE Tumbleweed 和 KDE 的个人安装过程
+
 
 ## 安装之前
 

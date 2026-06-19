@@ -1,36 +1,31 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Psychology - Tag - vkvk17&#39;s Blog</title>
-        <link>http://localhost:1313/en/tags/psychology/</link>
+        <link>https://vkvk17.github.io/en/tags/psychology/</link>
         <description>Psychology - Tag - vkvk17&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>vkvk17@foxmail.com (vkvk17)</managingEditor>
-            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/psychology/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</lastBuildDate><atom:link href="https://vkvk17.github.io/en/tags/psychology/" rel="self" type="application/rss+xml" /><item>
     <title>Reading Atomic Habits</title>
-    <link>http://localhost:1313/en/posts/reading-atomic-habits/</link>
-    <pubDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</pubDate>
-    <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>http://localhost:1313/en/posts/reading-atomic-habits/</guid>
-    <description><![CDATA[<h1 id="reading-atomic-habits">Reading Atomic Habits</h1>
-<h2 id="fundamentals-small-habits-bring-big-changes">Fundamentals: Small Habits Bring Big Changes</h2>
-<h3 id="the-surprising-power-of-tiny-habits">The surprising power of tiny habits</h3>
-<p>Example: British Cycling hired a new performance director who led the team onto a new path. Unlike previous directors, he meticulously carried out a strategy he called the aggregation of marginal gains, and it brought the cycling team enormous success.</p>
+    <link>https://vkvk17.github.io/en/posts/reading-atomic-habits/</link>
+    <pubDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</pubDate><author>
+                    <name>vkvk17</name>
+                </author><guid>https://vkvk17.github.io/en/posts/reading-atomic-habits/</guid>
+    <description><![CDATA[<h2 id="fundamentals-small-habits-bring-big-changes" class="headerLink">
+    <a href="#fundamentals-small-habits-bring-big-changes" class="header-mark"></a>Fundamentals: Small Habits Bring Big Changes</h2><h3 id="the-surprising-power-of-tiny-habits" class="headerLink">
+    <a href="#the-surprising-power-of-tiny-habits" class="header-mark"></a>The surprising power of tiny habits</h3><p>Example: British Cycling hired a new performance director who led the team onto a new path. Unlike previous directors, he meticulously carried out a strategy he called the aggregation of marginal gains, and it brought the cycling team enormous success.</p>
 <p>Conclusion: Small habits can bring big changes.</p>
 <p>Question: Why?</p>
 <p>Conclusion: Habits are the compound interest of self-improvement. Over time, the effects of small habits intensify.</p>
-<p><figure><a class="lightgallery" href="/images/Pasted%20image%2020250714002244.png" title="Compound effect" data-thumbnail="/images/Pasted%20image%2020250714002244.png" data-sub-html="<h2>The long-term impact of small habits</h2><p>Compound effect</p>">
-        
-    </a><figcaption class="image-caption">The long-term impact of small habits</figcaption>
-    </figure></p>
+<p><figure><img  loading="lazy" src='/images/Pasted%20image%2020250714002244.png'   alt="Compound effect"  ><figcaption class="image-caption">The long-term impact of small habits</figcaption>
+</figure></p>
 <p>Conclusion: Slow transformation also makes it easy for bad habits to linger.</p>
 <p>Conclusion: Your outcomes are lagging measures of your habits. Your net worth is a lagging measure of your financial habits. Your weight is a lagging measure of your eating habits. Your knowledge is a lagging measure of your learning habits. The clutter in your living environment is a lagging measure of your housekeeping habits. What you get is the result of what you repeatedly do day after day, year after year.</p>
 <p>Example: There is a block of ice on your desk. The room is cold, currently 25 degrees Fahrenheit. The room slowly warms up: 26, 27, 28, 29 &hellip; until 32 degrees, when the ice begins to melt. The temperature has only risen by one more degree, which seems no different from the previous increases, but it causes a huge change.</p>
 <p>Conclusion: Breakthrough moments are usually the result of a series of previous actions. Those actions accumulate the potential needed to trigger major change.</p>
 <p>Example: The San Antonio Spurs are one of the most successful teams in NBA history. In their locker room hangs a quote from social reformer Jacob Riis: when he feels powerless, he goes to watch a stonecutter hammering at a rock. Perhaps the stonecutter strikes it 100 times without a crack appearing, but on the 101st blow the stone splits in two. He knows it was not the final blow that did it, but all the blows that came before.</p>
 <p>Conclusion: After we put in effort, results often appear with a delay. It may take months or years before we recognize the true value of our earlier work.</p>
-<p><figure><a class="lightgallery" href="/images/Pasted%20image%2020250715060235.png" title="Breakthrough moment" data-thumbnail="/images/Pasted%20image%2020250715060235.png" data-sub-html="<h2>A crack after potential has accumulated</h2><p>Breakthrough moment</p>">
-        
-    </a><figcaption class="image-caption">A crack after potential has accumulated</figcaption>
-    </figure></p>
+<p><figure><img  loading="lazy" src='/images/Pasted%20image%2020250715060235.png'   alt="Breakthrough moment"  ><figcaption class="image-caption">A crack after potential has accumulated</figcaption>
+</figure></p>
 <p>Question: What determines whether we can persist long enough to pass through the plateau of latent potential until a breakthrough becomes part of our habits? And what causes some people to fall into bad habits while others enjoy the compound effects of good habits?</p>
 <p>Conclusion: We should forget goals and follow systems instead. Goals are about the results you want to achieve, while systems are about the processes that lead to those results.</p>
 <p>Question: If you focus all your attention on goals but neglect the systems behind them, several problems appear.</p>
@@ -41,33 +36,27 @@
 <li>Goals conflict with long-term progress.</li>
 </ol>
 <p>Conclusion: If you find it hard to change your habits, the problem is not you; it is your system. Bad habits repeat themselves not because you do not want to change, but because the system you use for change has problems.</p>
-<h3 id="how-your-habits-shape-your-identity-and-vice-versa">How your habits shape your identity, and vice versa</h3>
-<p>Conclusion: Changing habits is challenging for two reasons: (1) we try to change the wrong thing; (2) we try to change our habits in the wrong way. This chapter discusses the first point. Later chapters discuss the second.</p>
+<h3 id="how-your-habits-shape-your-identity-and-vice-versa" class="headerLink">
+    <a href="#how-your-habits-shape-your-identity-and-vice-versa" class="header-mark"></a>How your habits shape your identity, and vice versa</h3><p>Conclusion: Changing habits is challenging for two reasons: (1) we try to change the wrong thing; (2) we try to change our habits in the wrong way. This chapter discusses the first point. Later chapters discuss the second.</p>
 <p>Conclusion: We can divide behavior change into three levels, like the layers of an onion.</p>
-<p><figure><a class="lightgallery" href="/images/Pasted%20image%2020250715061510.png" title="Three levels of behavior" data-thumbnail="/images/Pasted%20image%2020250715061510.png" data-sub-html="<h2>Outcomes, processes, and identity</h2><p>Three levels of behavior</p>">
-        
-    </a><figcaption class="image-caption">Outcomes, processes, and identity</figcaption>
-    </figure></p>
+<p><figure><img  loading="lazy" src='/images/Pasted%20image%2020250715061510.png'   alt="Three levels of behavior"  ><figcaption class="image-caption">Outcomes, processes, and identity</figcaption>
+</figure></p>
 <p>Conclusion: Outcomes are about what you get. Processes are about what you do. Identity is about what you believe.</p>
 <p>Conclusion: Outcome-based habits focus on what you want to achieve; identity-based habits focus on who you want to become.</p>
-<p><figure><a class="lightgallery" href="/images/Pasted%20image%2020250715061707.png" title="Outcome vs identity" data-thumbnail="/images/Pasted%20image%2020250715061707.png" data-sub-html="<h2>Different directions of habit change</h2><p>Outcome vs identity</p>">
-        
-    </a><figcaption class="image-caption">Different directions of habit change</figcaption>
-    </figure></p>
+<p><figure><img  loading="lazy" src='/images/Pasted%20image%2020250715061707.png'   alt="Outcome vs identity"  ><figcaption class="image-caption">Different directions of habit change</figcaption>
+</figure></p>
 <p>Example: Imagine two people refusing a cigarette. When offered one, the first person says, &ldquo;No thanks, I am trying to quit.&rdquo; This sounds reasonable, but it implies that the person still believes they are a smoker who is trying to become something else. They assume their behavior will change while they still hold that belief. The second person says, &ldquo;No thanks, I do not smoke.&rdquo; This response is slightly different, but it signals a shift in identity. Smoking is part of their past, not their present. They no longer see themselves as a smoker.</p>
 <p>Conclusion: The ultimate form of intrinsic motivation is when a habit becomes part of your identity. Saying &ldquo;I want to be this kind of person&rdquo; is one thing; saying &ldquo;I am this kind of person&rdquo; is another.</p>
 <p>Example: The goal is not to read a book, but to become a reader. The goal is not to run a marathon, but to become a runner. The goal is not to learn an instrument, but to become a musician.</p>
 <p>Conclusion: Every action you take is a vote for the type of person you want to become. One or two votes will not transform your beliefs, but as the votes accumulate, the evidence for your new identity changes. This is one reason meaningful change does not require dramatic change.</p>
 <p>Conclusion: I am the kind of strong person with a healthy body. I am a great programmer. I am a professional who can speak English fluently.</p>
-<h3 id="the-four-step-model-for-building-good-habits">The four-step model for building good habits</h3>
-<p>Question: What is a habit? Why does the brain bother building them?</p>
+<h3 id="the-four-step-model-for-building-good-habits" class="headerLink">
+    <a href="#the-four-step-model-for-building-good-habits" class="header-mark"></a>The four-step model for building good habits</h3><p>Question: What is a habit? Why does the brain bother building them?</p>
 <p>Conclusion: A habit is a behavior that has been repeated enough times to become automatic. The process of habit formation begins with repeated attempts.</p>
 <p>Conclusion: Habits are mental shortcuts learned from experience. In a sense, a habit is just the memory of the steps you previously took to solve a problem. Habit formation is useful because conscious attention is the bottleneck of the brain. We cannot focus on everything at once, so the brain always tries to direct attention toward the most important problem at the moment. Whenever possible, the mind consciously hands certain tasks to the unconscious so they can be completed automatically. This is exactly what happens when habits form. Habits reduce cognitive load and free mental capacity, allowing you to focus on other tasks.</p>
 <p>Conclusion: The habit-forming process can be divided into four simple steps: cue, craving, response, and reward.</p>
-<p><figure><a class="lightgallery" href="/images/Pasted%20image%2020250715065932.png" title="Four-step model" data-thumbnail="/images/Pasted%20image%2020250715065932.png" data-sub-html="<h2>Cue, craving, response, reward</h2><p>Four-step model</p>">
-        
-    </a><figcaption class="image-caption">Cue, craving, response, reward</figcaption>
-    </figure></p>
+<p><figure><img  loading="lazy" src='/images/Pasted%20image%2020250715065932.png'   alt="Four-step model"  ><figcaption class="image-caption">Cue, craving, response, reward</figcaption>
+</figure></p>
 <p>Conclusion: We can turn these four steps into a practical framework for building good habits and eliminating bad ones. Whenever you want to change your behavior, ask yourself a few simple questions:</p>
 <ol>
 <li>How can I make it obvious?</li>
@@ -75,225 +64,216 @@
 <li>How can I make it easy?</li>
 <li>How can I make it satisfying?</li>
 </ol>
-<h2 id="the-first-law-make-it-obvious">The First Law: Make It Obvious</h2>
-<h3 id="understand-a-habit-before-changing-it">Understand a habit before changing it</h3>
-<p>Conclusion: Over time, the cues that trigger our habits become so common that we are almost blind to them.</p>
+<h2 id="the-first-law-make-it-obvious" class="headerLink">
+    <a href="#the-first-law-make-it-obvious" class="header-mark"></a>The First Law: Make It Obvious</h2><h3 id="understand-a-habit-before-changing-it" class="headerLink">
+    <a href="#understand-a-habit-before-changing-it" class="header-mark"></a>Understand a habit before changing it</h3><p>Conclusion: Over time, the cues that trigger our habits become so common that we are almost blind to them.</p>
 <p>Conclusion: As psychologist Carl Jung said, until you make the unconscious conscious, it will direct your life and you will call it fate.</p>
 <p>Example: In the Japanese railway system, drivers point at different objects and call out instructions while trains are running. It looks almost like a ritual. This process is called pointing and calling, a safety system designed to reduce human error. It may look silly, but it is extremely effective. Pointing and calling reduces errors by up to 85% and reduces accident rates by 30%. The New York City subway system adopted a modified version that kept only the pointing part; within two years, improper train stops were reduced by 57%.</p>
 <p>Example: The habit scorecard.</p>
-<p><figure><a class="lightgallery" href="/images/Pasted%20image%2020250716083848.png" title="Habit scorecard" data-thumbnail="/images/Pasted%20image%2020250716083848.png" data-sub-html="<h2>Recording and observing habits</h2><p>Habit scorecard</p>">
-        
-    </a><figcaption class="image-caption">Recording and observing habits</figcaption>
-    </figure></p>
+<p><figure><img  loading="lazy" src='/images/Pasted%20image%2020250716083848.png'   alt="Habit scorecard"  ><figcaption class="image-caption">Recording and observing habits</figcaption>
+</figure></p>
 <p>Conclusion: The first step to breaking a bad habit is to stay aware of it. If you need extra help, you can try pointing and calling in your own life. Say out loud the action you are about to take and the result you expect.</p>
 <p>Example: If you want to stop eating junk food but notice that you have picked up a cookie, you can say out loud: &ldquo;I am about to eat this cookie, but I do not need it. Eating it will make me gain weight and harm my health.&rdquo;</p>
-<h3 id="the-most-common-cues-are-time-and-location">The most common cues are time and location</h3>
-<p>Example: In a 2001 exercise study, British researchers worked with 248 people for two weeks to help them build better exercise habits. The participants were divided into three groups. The first was the control group; they only tracked how often they exercised. The second was the motivation group; they tracked their exercise and read material about the benefits of exercise. Researchers also explained how exercise reduces the risk of coronary heart disease and improves heart health. The third group received the same motivational material as the second, so the two groups had the same level of motivation. However, the researchers also asked the third group to make a specific plan for when and where they would exercise during the coming week. Each person completed the sentence: &ldquo;During the next week, I will exercise vigorously for at least 20 minutes on [day] at [time] in [place].&rdquo; In the first and second groups, 35% to 38% of people exercised at least once per week. Interestingly, the motivational material seemed to have no real effect. But in the third group, 91% exercised at least once per week, more than double the normal rate. The completed sentence is called an implementation intention: a plan made in advance about when and where to act.</p>
+<h3 id="the-most-common-cues-are-time-and-location" class="headerLink">
+    <a href="#the-most-common-cues-are-time-and-location" class="header-mark"></a>The most common cues are time and location</h3><p>Example: In a 2001 exercise study, British researchers worked with 248 people for two weeks to help them build better exercise habits. The participants were divided into three groups. The first was the control group; they only tracked how often they exercised. The second was the motivation group; they tracked their exercise and read material about the benefits of exercise. Researchers also explained how exercise reduces the risk of coronary heart disease and improves heart health. The third group received the same motivational material as the second, so the two groups had the same level of motivation. However, the researchers also asked the third group to make a specific plan for when and where they would exercise during the coming week. Each person completed the sentence: &ldquo;During the next week, I will exercise vigorously for at least 20 minutes on [day] at [time] in [place].&rdquo; In the first and second groups, 35% to 38% of people exercised at least once per week. Interestingly, the motivational material seemed to have no real effect. But in the third group, 91% exercised at least once per week, more than double the normal rate. The completed sentence is called an implementation intention: a plan made in advance about when and where to act.</p>
 <p>Conclusion: Whether it is writing down the exact date and time for a flu shot or recording the appointment time for a colonoscopy, implementation intentions are an effective way to make sure we do not forget our original intention.</p>
 <p>Conclusion: You need to give your habit a time and place to exist in the world. The point is to make time and location so obvious that, after enough repetitions, you feel pulled to do the right thing at the right time, even if you cannot explain why.</p>
 <p>Example: The Diderot Effect. Many human behaviors follow this loop. You often decide what to do next based on what you just finished doing. Going to the bathroom leads to washing and drying your hands, which reminds you to put the dirty towel in the laundry basket, which then adds laundry detergent to your shopping list, and so on. No behavior happens in isolation. Each action becomes a cue for the next one.</p>
 <p>Conclusion: The best way to build a new habit is to identify an existing habit and stack the new behavior on top of it. This is called habit stacking.</p>
-<p><figure><a class="lightgallery" href="/images/Pasted%20image%2020250716084855.png" title="Habit stacking" data-thumbnail="/images/Pasted%20image%2020250716084855.png" data-sub-html="<h2>Performing a new habit after a current habit</h2><p>Habit stacking</p>">
-        
-    </a><figcaption class="image-caption">Performing a new habit after a current habit</figcaption>
-    </figure></p>
+<p><figure><img  loading="lazy" src='/images/Pasted%20image%2020250716084855.png'   alt="Habit stacking"  ><figcaption class="image-caption">Performing a new habit after a current habit</figcaption>
+</figure></p>
 <p>Conclusion: The key is to connect the behavior you want with something you already do every day. Once you master this basic structure, you can create larger habit stacks by linking small habits together.</p>
 <p>Example: Your morning routine might look like this: 1. After pouring my morning coffee, I will meditate for 60 seconds. 2. After meditating for 60 seconds, I will write my to-do list for the day. 3. After writing my to-do list, I will immediately start the first task. Or your evening habit stack might look like this: 1. After dinner, I will put the dishes directly into the dishwasher. 2. After clearing the dishes, I will immediately wipe down the kitchen counter. 3. After wiping the counter, I will prepare the coffee cup I need the next morning.</p>
 <p>Conclusion: The implementation intention formula is: I will [behavior] at [time] in [location].</p>
 <p>Conclusion: The habit stacking formula is: After [current habit], I will [new habit].</p>
-<h3 id="environment-often-matters">Environment often matters</h3>
-<p>Conclusion: People choose records not because of what they are, but because they are there.</p>
+<h3 id="environment-often-matters" class="headerLink">
+    <a href="#environment-often-matters" class="header-mark"></a>Environment often matters</h3><p>Conclusion: People choose records not because of what they are, but because they are there.</p>
 <p>Conclusion: Environment is the invisible hand that shapes human behavior. Although we each have unique personalities, certain behaviors repeatedly appear under specific environmental conditions.</p>
 <p>Example: If you want to remember to take medicine every night, put the pill bottle directly on the bathroom counter near the faucet. If you want to practice guitar more often, place your guitar stand in the center of the living room. If you want to remember to send more thank-you notes, put a stack of note cards on your desk. If you want to drink more water, fill several water bottles every morning and place them in visible spots around the house.</p>
-<h2 id="the-second-law-make-it-attractive">The Second Law: Make It Attractive</h2>
-<h3 id="habits-do-not-resist">Habits do not resist</h3>
-<p>Example: After hundreds of thousands of years of hunting and foraging in the wild, the human brain evolved to place great value on salt, sugar, and fat. These foods are usually high in calories, and they were very rare when our ancestors wandered the savanna. When you live without knowing when the next meal will come, eating as much as possible whenever you get the chance is an excellent survival strategy.</p>
+<h2 id="the-second-law-make-it-attractive" class="headerLink">
+    <a href="#the-second-law-make-it-attractive" class="header-mark"></a>The Second Law: Make It Attractive</h2><h3 id="habits-do-not-resist" class="headerLink">
+    <a href="#habits-do-not-resist" class="header-mark"></a>Habits do not resist</h3><p>Example: After hundreds of thousands of years of hunting and foraging in the wild, the human brain evolved to place great value on salt, sugar, and fat. These foods are usually high in calories, and they were very rare when our ancestors wandered the savanna. When you live without knowing when the next meal will come, eating as much as possible whenever you get the chance is an excellent survival strategy.</p>
 <p>Example: Interestingly, the reward system activated in the brain when you receive a reward is the same system activated when you anticipate a reward. This is one reason anticipation of an experience is often more pleasurable than the experience itself. As a child, looking forward to Christmas morning may feel better than actually opening the presents; as an adult, imagining an upcoming vacation may feel more exciting than the vacation itself. Scientists call this the difference between wanting and liking.</p>
 <p>Conclusion: Temptation bundling is one way to apply Premack&rsquo;s Principle, named after professor David Premack. The principle states that high-frequency behaviors reinforce low-frequency behaviors. In other words, even if you genuinely do not want to handle overdue work emails, you may get used to doing it if it means you can simultaneously do something you really want to do.</p>
 <p>Example: The formula for habit stacking plus temptation bundling is: 1. After [current habit], I will [habit I need]. 2. After [habit I need], I will [habit I want]. You really want to read the news, but you need to express more gratitude: 1. After morning coffee, I will say one thing from yesterday that I am grateful for. 2. After saying the thing I am grateful for, I may read the news. You really want to watch sports, but you need to make sales calls: 1. After returning from lunch, I will call three potential clients. 2. After calling three potential clients, I will check ESPN for game updates. You really want to check Facebook, but you need more exercise: 1. After taking out my phone, I will do ten burpees. 2. After doing ten burpees, I can check Facebook updates.</p>
-<h3 id="the-role-of-friends-and-family-in-habits">The role of friends and family in habits</h3>
-<p>Example: Laszlo&rsquo;s plan to train his children into chess prodigies.</p>
+<h3 id="the-role-of-friends-and-family-in-habits" class="headerLink">
+    <a href="#the-role-of-friends-and-family-in-habits" class="header-mark"></a>The role of friends and family in habits</h3><p>Example: Laszlo&rsquo;s plan to train his children into chess prodigies.</p>
 <p>Conclusion: We pay special attention to imitating the habits of three groups:</p>
 <ol>
 <li>People close to us</li>
 <li>The majority</li>
 <li>The powerful</li>
 </ol>
-<h3 id="how-to-find-and-remove-the-root-cause-of-bad-habits">How to find and remove the root cause of bad habits</h3>
-<p>Example: You think you are giving something up, but in fact you are not giving up anything, because cigarettes offer you no real benefit. You think smoking is something you need for social situations, but it is not. You can socialize perfectly well without smoking. You think smoking relieves stress, but it does not. Smoking does not calm your nerves; it damages your nervous system.</p>
+<h3 id="how-to-find-and-remove-the-root-cause-of-bad-habits" class="headerLink">
+    <a href="#how-to-find-and-remove-the-root-cause-of-bad-habits" class="header-mark"></a>How to find and remove the root cause of bad habits</h3><p>Example: You think you are giving something up, but in fact you are not giving up anything, because cigarettes offer you no real benefit. You think smoking is something you need for social situations, but it is not. You can socialize perfectly well without smoking. You think smoking relieves stress, but it does not. Smoking does not calm your nerves; it damages your nervous system.</p>
 <p>Conclusion: Every behavior has a surface-level craving and a deeper motive. Your habits are modern methods for satisfying ancient desires, new forms of old impulses.</p>
 <p>Habits are associations. These associations determine whether we think a habit is worth repeating.</p>
-<h2 id="the-third-law-make-it-easy">The Third Law: Make It Easy</h2>
-<p>Example: A professor divided his film photography students into two groups: one group pursued quantity, the other pursued quality. In the end, the quantity group won.</p>
+<h2 id="the-third-law-make-it-easy" class="headerLink">
+    <a href="#the-third-law-make-it-easy" class="header-mark"></a>The Third Law: Make It Easy</h2><p>Example: A professor divided his film photography students into two groups: one group pursued quantity, the other pursued quality. In the end, the quantity group won.</p>
 <p>Conclusion: What you should focus on is the number of repetitions.</p>
 <p>Conclusion: To build a habit, you need practice. The most effective way to stick with practice is to follow the third law of behavior change: make it easy.</p>
 <p>Example: Look at any behavior that takes up a large portion of your life, and you will find that it is easy and convenient. Habits such as checking your phone, checking email, and watching television take up a lot of time because they require almost no effort.</p>
 <p>Example: Imagine watering a garden with a hose that is bent in the middle, causing the water to flow poorly. If you want to increase the flow, you have two choices: open the valve all the way and increase water pressure, or simply straighten the hose and let more water flow naturally. Imagine watering a garden with a hose that is bent in the middle, causing the water to flow poorly. If you want to increase the flow, you have two choices: open the valve all the way and increase water pressure, or simply straighten the hose and let more water flow naturally.</p>
 <p>Example: Nuckols developed a strategy he called resetting the room, and through consistent practice he gradually built a cleaning habit. For example, after watching television, he would put the remote back on the TV stand, straighten the sofa pillows, and fold the blanket. After getting out of the car, he would throw away all the trash inside. Whenever he showered, he would scrub the toilet while the water heated up. As he put it, the best time to clean the toilet is right before you shower anyway. The point of resetting the room is not only to clean up after one task, but to make the next task easier.</p>
-<h3 id="stop-procrastinating">Stop procrastinating</h3>
-<p>Example: Every evening, there is a tiny moment, usually around 5:15 p.m., that sets the tone for my entire night. After my wife gets home from work, we either change into workout clothes and go to the gym, or we order Indian takeout and lie on the sofa watching The Office. Just like Twyla Tharp calling a cab, changing into workout clothes is our ritual. If I change clothes, I know the next step is going to the gym. Once I take the first step, everything else becomes easy: driving to the gym, choosing an activity, lifting weights.</p>
-<p><figure><a class="lightgallery" href="/images/Pasted%20image%2020260610211221.png" title="Habit starting ritual" data-thumbnail="/images/Pasted%20image%2020260610211221.png" data-sub-html="<h2>The key moment that starts a new habit</h2><p>Habit starting ritual</p>">
-        
-    </a><figcaption class="image-caption">The key moment that starts a new habit</figcaption>
-    </figure></p>
-<p><figure><a class="lightgallery" href="/images/Pasted%20image%2020260610211312.png" title="Habit execution flow" data-thumbnail="/images/Pasted%20image%2020260610211312.png" data-sub-html="<h2>From starting to continuing</h2><p>Habit execution flow</p>">
-        
-    </a><figcaption class="image-caption">From starting to continuing</figcaption>
-    </figure></p>
+<h3 id="stop-procrastinating" class="headerLink">
+    <a href="#stop-procrastinating" class="header-mark"></a>Stop procrastinating</h3><p>Example: Every evening, there is a tiny moment, usually around 5:15 p.m., that sets the tone for my entire night. After my wife gets home from work, we either change into workout clothes and go to the gym, or we order Indian takeout and lie on the sofa watching The Office. Just like Twyla Tharp calling a cab, changing into workout clothes is our ritual. If I change clothes, I know the next step is going to the gym. Once I take the first step, everything else becomes easy: driving to the gym, choosing an activity, lifting weights.</p>
+<p><figure><img  loading="lazy" src='/images/Pasted%20image%2020260610211221.png'   alt="Habit starting ritual"  ><figcaption class="image-caption">The key moment that starts a new habit</figcaption>
+</figure></p>
+<p><figure><img  loading="lazy" src='/images/Pasted%20image%2020260610211312.png'   alt="Habit execution flow"  ><figcaption class="image-caption">From starting to continuing</figcaption>
+</figure></p>
 <p>When you start building a new habit, it should take no more than two minutes.</p>
 <p>Many habits happen at decisive moments. Each choice is like a fork in the road, and your choice can eventually lead to a productive day or a wasted one.</p>
 <p>The more ritualized the beginning of a routine is, the more likely you are to enter the focused state needed to do great work.</p>
-<h3 id="make-bad-habits-difficult">Make bad habits difficult</h3>
-<p>Example: Victor Hugo made a strange plan to overcome procrastination. He gathered all his clothes and had an assistant lock them in a large chest. Except for a large shawl, he had nothing to wear. During the autumn and winter of 1830, because he had no suitable clothes for going out, he stayed in his study and wrote intensely. Notre-Dame de Paris was published on January 14, 1831, two weeks ahead of schedule.</p>
+<h3 id="make-bad-habits-difficult" class="headerLink">
+    <a href="#make-bad-habits-difficult" class="header-mark"></a>Make bad habits difficult</h3><p>Example: Victor Hugo made a strange plan to overcome procrastination. He gathered all his clothes and had an assistant lock them in a large chest. Except for a large shawl, he had nothing to wear. During the autumn and winter of 1830, because he had no suitable clothes for going out, he stayed in his study and wrote intensely. Notre-Dame de Paris was published on January 14, 1831, two weeks ahead of schedule.</p>
 <p>Conclusion: Sometimes success is not simply about making good habits easy. More importantly, it is about making bad habits hard to continue. This is the inversion of the third law of behavior change: make it difficult.</p>
-<h2 id="the-fourth-law-make-it-satisfying">The Fourth Law: Make It Satisfying</h2>
-<h3 id="the-basic-principle-of-behavior-change">The basic principle of behavior change</h3>
-<p>The key to turning immediate satisfaction in your favor is to create a sense of achievement, even if it is only a small feeling.</p>
+<h2 id="the-fourth-law-make-it-satisfying" class="headerLink">
+    <a href="#the-fourth-law-make-it-satisfying" class="header-mark"></a>The Fourth Law: Make It Satisfying</h2><h3 id="the-basic-principle-of-behavior-change" class="headerLink">
+    <a href="#the-basic-principle-of-behavior-change" class="header-mark"></a>The basic principle of behavior change</h3><p>The key to turning immediate satisfaction in your favor is to create a sense of achievement, even if it is only a small feeling.</p>
 <p>Example: One way to solve this problem is to reverse it. Make the habit you want to avoid visible. Open a savings account and label it for something you really want to buy in the future, such as a leather jacket. Every time you give up buying something, transfer the corresponding amount of money into that account. Did not buy coffee this morning? Deposit 5 dollars. Did not renew Netflix last month? Deposit 10 dollars. It is like creating a loyalty program for yourself. Seeing the immediate reward of saving money for a leather jacket feels much better than the feeling of giving up shopping. In this way, even if you buy nothing, you still feel satisfied. One of my readers and his wife did this. They wanted to reduce how often they ate out and started cooking together at home. They labeled their savings account &ldquo;Trip to Europe.&rdquo; Every time they skipped eating out, they transferred 50 dollars into the account. At the end of the year, they spent the money on a vacation.</p>
 <p>It is worth noting that you must choose short-term rewards that reinforce your identity, not ones that conflict with it. If you want to lose weight or read more books, buying a new jacket is fine, but it is not suitable if your goal is simply to save money. Likewise, taking a bath or wandering around to enjoy your leisure time can be a good reward if it aligns with your pursuit of more freedom and financial independence. If your reward for exercising is a bowl of ice cream, you are undermining yourself and eventually canceling out your efforts. Instead, you might reward yourself with a full-body massage, which is both a luxury and a way to take care of your body. Now the short-term reward matches your long-term vision of staying healthy.</p>
-<h3 id="how-to-keep-good-habits-every-day">How to keep good habits every day</h3>
-<p>Progress is satisfying. With visual measures such as moving paper clips, hairpins, or marbles, you can clearly see your progress. As a result, they reinforce your behavior and add immediate satisfaction to any activity. Visual measures come in many forms: food journals, workout logs, punch-card loyalty programs, software download progress bars, and even page numbers in books. But perhaps the best way to measure progress is habit tracking.</p>
+<h3 id="how-to-keep-good-habits-every-day" class="headerLink">
+    <a href="#how-to-keep-good-habits-every-day" class="header-mark"></a>How to keep good habits every day</h3><p>Progress is satisfying. With visual measures such as moving paper clips, hairpins, or marbles, you can clearly see your progress. As a result, they reinforce your behavior and add immediate satisfaction to any activity. Visual measures come in many forms: food journals, workout logs, punch-card loyalty programs, software download progress bars, and even page numbers in books. But perhaps the best way to measure progress is habit tracking.</p>
 <p>How do you recover quickly when your habits break down? Never miss twice. If I miss one day, I will get back on track as quickly as possible.</p>
-<h3 id="how-an-accountability-partner-can-change-everything">How an accountability partner can change everything</h3>
-<p>Fortunately, there is a shortcut that directly increases the immediate cost of any bad habit: create a habit contract.</p>
+<h3 id="how-an-accountability-partner-can-change-everything" class="headerLink">
+    <a href="#how-an-accountability-partner-can-change-everything" class="header-mark"></a>How an accountability partner can change everything</h3><p>Fortunately, there is a shortcut that directly increases the immediate cost of any bad habit: create a habit contract.</p>
 <p>Governments can change our habits by creating social contracts, and laws and regulations are good examples. In society, we collectively agree to follow certain rules and enforce them together. Whenever new legislation is introduced, such as seat belt laws, smoking bans in restaurants, or mandatory recycling, it affects people&rsquo;s behavior and becomes an example of social contracts shaping our habits. The group collectively agrees to follow a certain behavior, and if you do not follow it, you are punished.</p>
 <p>Just as governments use laws to hold citizens accountable, you can create a habit contract to hold yourself responsible. A habit contract is a verbal or written agreement in which you declare your commitment to a specific habit and agree to accept a corresponding punishment if you break your promise. Then you find one or two people as accountability partners and sign the agreement with them.</p>
-<h2 id="summary-of-methods">Summary of Methods</h2>
-<h3 id="how-to-build-good-habits">How to build good habits</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Category</th>
-<th style="text-align:left">Method</th>
-<th style="text-align:left">Specific practice</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>First law: Make it obvious</strong></td>
-<td style="text-align:left">1.1</td>
-<td style="text-align:left">Fill out a habit scorecard; write down your current habits and notice them</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">1.2</td>
-<td style="text-align:left">Use implementation intentions: &ldquo;I will [behavior] at [time] in [location].&rdquo;</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">1.3</td>
-<td style="text-align:left">Use habit stacking: &ldquo;After [current habit], I will [new habit].&rdquo;</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">1.4</td>
-<td style="text-align:left">Design your environment. Make the cues for good habits clear and obvious</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Second law: Make it attractive</strong></td>
-<td style="text-align:left">2.1</td>
-<td style="text-align:left">Use temptation bundling. Reinforce the action you need with a behavior you enjoy</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">2.2</td>
-<td style="text-align:left">Join a culture where your desired behavior is normal</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">2.3</td>
-<td style="text-align:left">Create a motivation ritual. Do something you especially enjoy before a low-frequency action</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Third law: Make it easy</strong></td>
-<td style="text-align:left">3.1</td>
-<td style="text-align:left">Reduce friction. Reduce the steps required to build a good habit</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">3.2</td>
-<td style="text-align:left">Prepare the environment. Create an environment that supports future behavior</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">3.3</td>
-<td style="text-align:left">Master the decisive moment. Optimize the small choices that create major impact</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">3.4</td>
-<td style="text-align:left">Use the two-minute rule. Shorten your habit until it takes two minutes or less</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">3.5</td>
-<td style="text-align:left">Automate your habits. Invest in technology and tools that lock in future behavior</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Fourth law: Make it satisfying</strong></td>
-<td style="text-align:left">4.1</td>
-<td style="text-align:left">Use reinforcement. Reward yourself immediately after completing a habit routine</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">4.2</td>
-<td style="text-align:left">Make doing nothing enjoyable. When avoiding a bad habit, design a way to make the benefit visible</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">4.3</td>
-<td style="text-align:left">Use habit tracking. Record habit tendencies and do not break the chain</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">4.4</td>
-<td style="text-align:left">Never miss twice. If you forget once, recover as soon as possible</td>
-</tr>
-</tbody>
+<h2 id="summary-of-methods" class="headerLink">
+    <a href="#summary-of-methods" class="header-mark"></a>Summary of Methods</h2><h3 id="how-to-build-good-habits" class="headerLink">
+    <a href="#how-to-build-good-habits" class="header-mark"></a>How to build good habits</h3><table>
+	<thead>
+			<tr>
+					<th style="text-align: left">Category</th>
+					<th style="text-align: left">Method</th>
+					<th style="text-align: left">Specific practice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><strong>First law: Make it obvious</strong></td>
+					<td style="text-align: left">1.1</td>
+					<td style="text-align: left">Fill out a habit scorecard; write down your current habits and notice them</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">1.2</td>
+					<td style="text-align: left">Use implementation intentions: &ldquo;I will [behavior] at [time] in [location].&rdquo;</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">1.3</td>
+					<td style="text-align: left">Use habit stacking: &ldquo;After [current habit], I will [new habit].&rdquo;</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">1.4</td>
+					<td style="text-align: left">Design your environment. Make the cues for good habits clear and obvious</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Second law: Make it attractive</strong></td>
+					<td style="text-align: left">2.1</td>
+					<td style="text-align: left">Use temptation bundling. Reinforce the action you need with a behavior you enjoy</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">2.2</td>
+					<td style="text-align: left">Join a culture where your desired behavior is normal</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">2.3</td>
+					<td style="text-align: left">Create a motivation ritual. Do something you especially enjoy before a low-frequency action</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Third law: Make it easy</strong></td>
+					<td style="text-align: left">3.1</td>
+					<td style="text-align: left">Reduce friction. Reduce the steps required to build a good habit</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">3.2</td>
+					<td style="text-align: left">Prepare the environment. Create an environment that supports future behavior</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">3.3</td>
+					<td style="text-align: left">Master the decisive moment. Optimize the small choices that create major impact</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">3.4</td>
+					<td style="text-align: left">Use the two-minute rule. Shorten your habit until it takes two minutes or less</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">3.5</td>
+					<td style="text-align: left">Automate your habits. Invest in technology and tools that lock in future behavior</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Fourth law: Make it satisfying</strong></td>
+					<td style="text-align: left">4.1</td>
+					<td style="text-align: left">Use reinforcement. Reward yourself immediately after completing a habit routine</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">4.2</td>
+					<td style="text-align: left">Make doing nothing enjoyable. When avoiding a bad habit, design a way to make the benefit visible</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">4.3</td>
+					<td style="text-align: left">Use habit tracking. Record habit tendencies and do not break the chain</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">4.4</td>
+					<td style="text-align: left">Never miss twice. If you forget once, recover as soon as possible</td>
+			</tr>
+	</tbody>
 </table>
-<h3 id="the-four-laws-for-breaking-bad-habits-inverted">The four laws for breaking bad habits, inverted</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Category</th>
-<th style="text-align:left">Method</th>
-<th style="text-align:left">Specific practice</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Inversion of the first law: Make it invisible</strong></td>
-<td style="text-align:left">1.5</td>
-<td style="text-align:left">Reduce exposure. Remove the cues of bad habits from your environment</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Inversion of the second law: Make it unattractive</strong></td>
-<td style="text-align:left">2.4</td>
-<td style="text-align:left">Reframe your mindset. List the benefits of quitting a bad habit</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Inversion of the third law: Make it difficult</strong></td>
-<td style="text-align:left">3.6</td>
-<td style="text-align:left">Increase friction. Add steps before performing the bad habit</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">3.7</td>
-<td style="text-align:left">Use a commitment device. Lock in future choices that benefit you</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Inversion of the fourth law: Make it unsatisfying</strong></td>
-<td style="text-align:left">4.5</td>
-<td style="text-align:left">Find an accountability partner. Ask someone to supervise your behavior</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">4.6</td>
-<td style="text-align:left">Create a habit contract. Make the consequences of a bad habit public and painful</td>
-</tr>
-</tbody>
+<h3 id="the-four-laws-for-breaking-bad-habits-inverted" class="headerLink">
+    <a href="#the-four-laws-for-breaking-bad-habits-inverted" class="header-mark"></a>The four laws for breaking bad habits, inverted</h3><table>
+	<thead>
+			<tr>
+					<th style="text-align: left">Category</th>
+					<th style="text-align: left">Method</th>
+					<th style="text-align: left">Specific practice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><strong>Inversion of the first law: Make it invisible</strong></td>
+					<td style="text-align: left">1.5</td>
+					<td style="text-align: left">Reduce exposure. Remove the cues of bad habits from your environment</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Inversion of the second law: Make it unattractive</strong></td>
+					<td style="text-align: left">2.4</td>
+					<td style="text-align: left">Reframe your mindset. List the benefits of quitting a bad habit</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Inversion of the third law: Make it difficult</strong></td>
+					<td style="text-align: left">3.6</td>
+					<td style="text-align: left">Increase friction. Add steps before performing the bad habit</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">3.7</td>
+					<td style="text-align: left">Use a commitment device. Lock in future choices that benefit you</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Inversion of the fourth law: Make it unsatisfying</strong></td>
+					<td style="text-align: left">4.5</td>
+					<td style="text-align: left">Find an accountability partner. Ask someone to supervise your behavior</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"></td>
+					<td style="text-align: left">4.6</td>
+					<td style="text-align: left">Create a habit contract. Make the consequences of a bad habit public and painful</td>
+			</tr>
+	</tbody>
 </table>
 ]]></description>
-</item>
-</channel>
+</item></channel>
 </rss>

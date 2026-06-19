@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Authors - 作者 - vkvk17的博客</title>
-        <link>https://vkvk17.github.io/authors/</link>
+        <link>http://localhost:1313/authors/</link>
         <description>Authors - 作者 - vkvk17的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>vkvk17@foxmail.com (vkvk17)</managingEditor>
-            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</lastBuildDate><atom:link href="https://vkvk17.github.io/authors/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/authors/" rel="self" type="application/rss+xml" /><item>
     <title>Vkvk17</title>
-    <link>https://vkvk17.github.io/authors/vkvk17/</link>
+    <link>http://localhost:1313/authors/vkvk17/</link>
     <pubDate>Wed, 10 Jun 2026 13:17:54 &#43;0000</pubDate>
     <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>https://vkvk17.github.io/authors/vkvk17/</guid>
+    <guid>http://localhost:1313/authors/vkvk17/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

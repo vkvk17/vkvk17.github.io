@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Denote - 标签 - vkvk17的博客</title>
-        <link>https://vkvk17.github.io/tags/denote/</link>
+        <link>http://localhost:1313/tags/denote/</link>
         <description>Denote - 标签 - vkvk17的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>vkvk17@foxmail.com (vkvk17)</managingEditor>
-            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Sat, 28 Mar 2026 14:10:00 &#43;0000</lastBuildDate><atom:link href="https://vkvk17.github.io/tags/denote/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>vkvk17@foxmail.com (vkvk17)</webMaster><lastBuildDate>Sat, 28 Mar 2026 14:10:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/denote/" rel="self" type="application/rss+xml" /><item>
     <title>denote 使用方法</title>
-    <link>https://vkvk17.github.io/posts/2026-03-28-denote-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+    <link>http://localhost:1313/posts/2026-03-28-denote-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
     <pubDate>Sat, 28 Mar 2026 14:10:00 &#43;0000</pubDate>
     <author>vkvk17@foxmail.com (vkvk17)</author>
-    <guid>https://vkvk17.github.io/posts/2026-03-28-denote-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+    <guid>http://localhost:1313/posts/2026-03-28-denote-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
     <description><![CDATA[<h1 id="denote-使用方法">denote 使用方法</h1>
 <h2 id="关于">关于</h2>
 <p>自己随便记录的关于 denote 的一些使用方法，绝大部分都是直接翻译的官方文档。</p>

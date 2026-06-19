@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>How to Use Denote - vkvk17&#39;s Blog</title><meta name="Description" content="Notes on several ways to use Denote"><meta property="og:url" content="http://localhost:1313/en/posts/how-to-use-denote/">
+  <meta property="og:site_name" content="vkvk17&#39;s Blog">
+  <meta property="og:title" content="How to Use Denote">
+  <meta property="og:description" content="Notes on several ways to use Denote">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-28T14:10:00+00:00">
+    <meta property="article:modified_time" content="2026-03-28T14:10:01+00:00">
+    <meta property="article:tag" content="Denote">
+    <meta property="article:tag" content="Emacs">
+    <meta property="article:tag" content="Orgmode">
+    <meta property="og:image" content="http://localhost:1313/picture/mushi005_green.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/picture/mushi005_green.png">
+  <meta name="twitter:title" content="How to Use Denote">
+  <meta name="twitter:description" content="Notes on several ways to use Denote">
+<meta name="application-name" content="vkvk17&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="vkvk17&#39;s Blog">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/avtar/android-chrome-512x512.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/en/posts/how-to-use-denote/" /><link rel="next" href="http://localhost:1313/en/posts/opensuse-tumbleweed-kde-installation-notes/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How to Use Denote",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/en\/posts\/how-to-use-denote\/"
+        },"genre": "posts","keywords": "denote, Emacs, orgmode","wordcount":  1120 ,
+        "url": "http:\/\/localhost:1313\/en\/posts\/how-to-use-denote\/","datePublished": "2026-03-28T14:10:00+00:00","dateModified": "2026-03-28T14:10:01+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "vkvk17"
+            },"description": "Notes on several ways to use Denote"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>
+          const query = window.matchMedia('(prefers-color-scheme: dark)');
+          function applyTheme() {
+            let theme = window.localStorage?.getItem('theme') || 'auto';
+            let isDark = theme === 'dark' || (theme === 'auto' && query.matches);
+            document.body.setAttribute('theme', isDark? 'dark' : 'light');
+            document.body.setAttribute('cfg-theme', theme);
+          }
+
+          applyTheme();
+          query.addEventListener('change', applyTheme);
+        </script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/en/" title="vkvk17&#39;s Blog"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/icon/header.png"
+        data-srcset="/icon/header.png, /icon/header.png 1.5x, /icon/header.png 2x"
+        data-sizes="auto"
+        alt="/icon/header.png"
+        title="/icon/header.png" />vkvk17&#39;s Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/en/posts/"> Posts </a><a class="menu-item" href="/en/tags/"> Tags </a><a class="menu-item" href="/en/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/2026-03-28-denote-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">简体中文</option><option value="/en/posts/how-to-use-denote/" selected>English</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/en/" title="vkvk17&#39;s Blog"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/icon/header.png"
+        data-srcset="/icon/header.png, /icon/header.png 1.5x, /icon/header.png 2x"
+        data-sizes="auto"
+        alt="/icon/header.png"
+        title="/icon/header.png" />vkvk17&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/en/posts/" title="">Posts</a><a class="menu-item" href="/en/tags/" title="">Tags</a><a class="menu-item" href="/en/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/2026-03-28-denote-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">简体中文</option><option value="/en/posts/how-to-use-denote/" selected>English</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to Use Denote</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://vkvk17.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>vkvk17</a></span>&nbsp;<span class="post-category">included in <a href="/en/categories/learning/"><i class="far fa-folder" aria-hidden="true"></i>Learning</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2026-03-28">2026-03-28</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;1120 words&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#creating-standard-notes">Creating Standard Notes</a>
+      <ul>
+        <li><a href="#the-denote-templates-option">The <code>denote-templates</code> option</a></li>
+        <li><a href="#maintaining-separate-note-directory-silos">Maintaining separate note-directory silos</a></li>
+      </ul>
+    </li>
+    <li><a href="#note-file-naming-convention">Note File Naming Convention</a></li>
+    <li><a href="#linking-notes">Linking Notes</a>
+      <ul>
+        <li><a href="#adding-a-single-link">Adding a single link</a></li>
+        <li><a href="#the-denote-org-store-link-to-heading-user-option">The <code>denote-org-store-link-to-heading</code> user option</a></li>
+        <li><a href="#inserting-a-link-to-a-heading-inside-an-org-file">Inserting a link to a heading inside an Org file</a></li>
+        <li><a href="#inserting-links-that-match-a-regular-expression">Inserting links that match a regular expression</a></li>
+        <li><a href="#linking-to-an-existing-note-or-creating-a-new-one">Linking to an existing note or creating a new one</a></li>
+        <li><a href="#the-backlinks-buffer">The backlinks buffer</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="how-to-use-denote">How to Use Denote</h1>
+<h2 id="about">About</h2>
+<p>These are casual notes on how to use Denote. Most of the content is translated or adapted directly from the official documentation.</p>
+<h2 id="references">References</h2>
+<p><a href="https://protesilaos.com/emacs/denote" target="_blank" rel="noopener noreffer ">Denote documentation</a></p>
+<h2 id="creating-standard-notes">Creating Standard Notes</h2>
+<p>Commands that prompt the user for input when creating notes include, but are not limited to:</p>
+<ul>
+<li><code>denote</code></li>
+<li><code>denote-signature</code></li>
+<li><code>denote-type</code></li>
+<li><code>denote-date</code></li>
+<li><code>denote-subdirectory</code></li>
+<li><code>denote-rename-file</code></li>
+<li><code>denote-dired-rename-files</code></li>
+</ul>
+<h3 id="the-denote-templates-option">The <code>denote-templates</code> option</h3>
+<p>Users can start a new note from a template.</p>
+<p>A template can be configured like this:</p>
+<p>elisp</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-swift">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="p">(</span><span class="n">setq</span> <span class="n">denote</span><span class="o">-</span><span class="n">templates</span>
+</span></span><span class="line"><span class="cl">      <span class="err">&#39;</span><span class="p">((</span><span class="n">report</span> <span class="p">.</span> <span class="s">&#34;* Some heading
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">* Another heading&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="n">memo</span> <span class="p">.</span> <span class="s">&#34;* Some heading
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">* Another heading)))</span></span></span></code></pre></div></div>
+<p>A better approach is to use <code>concat</code> to join strings together:</p>
+<p>emacs-lisp</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-swift">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="p">(</span><span class="n">setq</span> <span class="n">denote</span><span class="o">-</span><span class="n">templates</span>
+</span></span><span class="line"><span class="cl">      <span class="p">`((</span><span class="n">report</span> <span class="p">.</span> <span class="s">&#34;* Some heading
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">* Another heading&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="n">memo</span> <span class="p">.</span> <span class="p">,(</span><span class="n">concat</span> <span class="s">&#34;* Some heading&#34;</span>
+</span></span><span class="line"><span class="cl">                         <span class="s">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">                         <span class="s">&#34;* Another heading&#34;</span>
+</span></span><span class="line"><span class="cl">                         <span class="s">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">&#34;</span><span class="p">))))</span></span></span></code></pre></div></div>
+<h3 id="maintaining-separate-note-directory-silos">Maintaining separate note-directory silos</h3>
+<p>The idea of <code>silos</code> means that notes are stored in different places, and those directories are separated from one another. We call these directories <code>silos</code>.</p>
+<p>To create a <code>silo</code>, first create a <code>.dir-locals.el</code> file inside the note directory. When creating it, Emacs will ask whether to store this path variable; choose yes.</p>
+<p>Write the following into <code>.dir-locals.el</code>:</p>
+<p>emacs-lisp</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-wasm">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">;;; Directory Local Variables.  For more information evaluate:
+</span></span><span class="line"><span class="cl">;;;
+</span></span><span class="line"><span class="cl">;;;     (info &#34;(emacs) Directory Variables&#34;)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">((nil . ((denote-directory . &#34;/path/to/silo/&#34;)
+</span></span><span class="line"><span class="cl">         (denote-infer-keywords . nil))))</span></span></code></pre></div></div>
+<p>Here is my notes directory (<code>01Index</code> is my <code>denote-directory</code>):</p>
+<p>bash</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-lua">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="p">.</span><span class="o">/</span><span class="mi">01</span><span class="n">Index</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="p">.</span><span class="n">DS_Store</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240228</span><span class="n">T160157</span><span class="c1">--mastering-eshell__emacs_linux_shell.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240228</span><span class="n">T160157</span><span class="c1">--mastering-eshell__emacs_linux_shell.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240315</span><span class="n">T225352</span><span class="c1">--c语言程序设计现代方法__c.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240317</span><span class="n">T201104</span><span class="c1">--cpp-primer__cpp.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240407</span><span class="n">T230222</span><span class="c1">--西方哲学史__reading.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="n">ltximg</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="o">/</span><span class="mi">02</span><span class="n">Area</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="p">.</span><span class="n">dir</span><span class="o">-</span><span class="n">locals.el</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240201</span><span class="n">T021341</span><span class="c1">--emacs-manual-note__emacs.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240201</span><span class="n">T021341</span><span class="c1">--emacs-manual-note__emacs.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240302</span><span class="n">T153745</span><span class="c1">--计算机网络原理__network.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240302</span><span class="n">T153745</span><span class="c1">--计算机网络原理__network.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240320</span><span class="n">T175109</span><span class="c1">--操作系统__operatingsystem.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240320</span><span class="n">T175109</span><span class="c1">--操作系统__operatingsystem.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240328</span><span class="n">T141613</span><span class="c1">--计算机系统结构__computerarchitecture.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="mi">20240328</span><span class="n">T141613</span><span class="c1">--计算机系统结构__computerarchitecture.org</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="o">/</span><span class="mi">03</span><span class="n">Resource</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="p">.</span><span class="n">dir</span><span class="o">-</span><span class="n">locals.el</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240221</span><span class="n">T162109</span><span class="c1">--kde-plasma-桌面-korganizer-等软件关闭后仍然占用约-800-m-内存__bug_kde.assets</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="mi">20240221</span><span class="n">T162109</span><span class="c1">--kde-plasma-桌面-korganizer-等软件关闭后仍然占用约-800-m-内存__bug_kde.org</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="mi">20240222</span><span class="n">T000349</span><span class="c1">--opensuse-tumbleweed-和-kde-的个人安装过程__kde_linux_opensuse.org</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="o">/</span><span class="mi">04</span><span class="n">Project</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="p">.</span><span class="n">dir</span><span class="o">-</span><span class="n">locals.el</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="mi">20240417</span><span class="n">T220159</span><span class="c1">--denote-使用方法__emacs.org</span></span></span></code></pre></div></div>
+<p>After that, we still need a custom user command that selects the <code>silo</code> automatically. In normal use, <code>denote</code> will put notes into <code>01Index</code> by default. When we switch to <code>02Area</code>, Denote-related commands will automatically store notes in the current <code>silo</code>.</p>
+<p>My user configuration is as follows:</p>
+<p>emacs-lisp</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-perl">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-perl" data-lang="perl"><span class="line"><span class="cl"><span class="p">(</span><span class="n">defvar</span> <span class="k">my</span><span class="o">-</span><span class="n">denote</span><span class="o">-</span><span class="n">silo</span><span class="o">-</span><span class="n">directories</span>
+</span></span><span class="line"><span class="cl">    <span class="sb">`(&#34;/home/MEGA/02Area&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sb">      &#34;/home/MEGA/03Resource&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sb">      &#34;/home/MEGA/04Project&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sb">      ;; You don&#39;t actually need to include the `</span><span class="n">denote</span><span class="o">-</span><span class="n">directory</span><span class="s">&#39; here
+</span></span></span><span class="line"><span class="cl"><span class="s">      ;; if you use the regular commands in their global context.  I am
+</span></span></span><span class="line"><span class="cl"><span class="s">      ;; including it for completeness.
+</span></span></span><span class="line"><span class="cl"><span class="s">      ,denote-directory)
+</span></span></span><span class="line"><span class="cl"><span class="s">    &#34;List of file paths pointing to my Denote silos.
+</span></span></span><span class="line"><span class="cl"><span class="s">  This is a list of strings.&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">  (defvar my-denote-commands-for-silos
+</span></span></span><span class="line"><span class="cl"><span class="s">    &#39;</span><span class="p">(</span><span class="n">denote</span>
+</span></span><span class="line"><span class="cl">      <span class="n">denote</span><span class="o">-</span><span class="n">date</span>
+</span></span><span class="line"><span class="cl">      <span class="n">denote</span><span class="o">-</span><span class="n">subdirectory</span>
+</span></span><span class="line"><span class="cl">      <span class="n">denote</span><span class="o">-</span><span class="n">template</span>
+</span></span><span class="line"><span class="cl">      <span class="n">denote</span><span class="o">-</span><span class="n">type</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;List of Denote commands to call after selecting a silo.
+</span></span></span><span class="line"><span class="cl"><span class="s">  This is a list of symbols that specify the note-creating
+</span></span></span><span class="line"><span class="cl"><span class="s">  interactive functions that Denote provides.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="n">defun</span> <span class="k">my</span><span class="o">-</span><span class="n">denote</span><span class="o">-</span><span class="n">pick</span><span class="o">-</span><span class="n">silo</span><span class="o">-</span><span class="k">then</span><span class="o">-</span><span class="n">command</span> <span class="p">(</span><span class="n">silo</span> <span class="n">command</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Select SILO and run Denote COMMAND in it.
+</span></span></span><span class="line"><span class="cl"><span class="s">  SILO is a file path from `my-denote-silo-directories&#39;, while
+</span></span></span><span class="line"><span class="cl"><span class="s">  COMMAND is one among `my-denote-commands-for-silos&#39;.&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">interactive</span>
+</span></span><span class="line"><span class="cl">     <span class="p">(</span><span class="n">list</span> <span class="p">(</span><span class="n">completing</span><span class="o">-</span><span class="nb">read</span> <span class="s">&#34;Select a silo: &#34;</span> <span class="k">my</span><span class="o">-</span><span class="n">denote</span><span class="o">-</span><span class="n">silo</span><span class="o">-</span><span class="n">directories</span> <span class="n">nil</span> <span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="n">intern</span> <span class="p">(</span><span class="n">completing</span><span class="o">-</span><span class="nb">read</span>
+</span></span><span class="line"><span class="cl">                    <span class="s">&#34;Run command in silo: &#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">my</span><span class="o">-</span><span class="n">denote</span><span class="o">-</span><span class="n">commands</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">silos</span> <span class="n">nil</span> <span class="n">t</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">let</span> <span class="p">((</span><span class="n">denote</span><span class="o">-</span><span class="n">directory</span> <span class="n">silo</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="n">call</span><span class="o">-</span><span class="n">interactively</span> <span class="n">command</span><span class="p">)))</span></span></span></code></pre></div></div>
+<p>The implementation of silos is not especially elegant. It is a relatively new feature, so for now we can only make do with it. I think the author should probably integrate this distributed-repository concept into the configuration around <code>denote-directory</code>.</p>
+<p>After all, I cannot always put all notes in one folder, and always using <code>denote-subdirectory</code> is not a great solution either.</p>
+<h2 id="note-file-naming-convention">Note File Naming Convention</h2>
+<p>Notes are stored in <code>denote-directory</code>, which defaults to <code>~/Documents/notes</code>.</p>
+<p>By default, Denote follows this naming convention:</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-ini">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="na">DATE</span><span class="o">=</span><span class="s">=SIGNATURE--TITLE__KEYWORDS.EXTENSION</span></span></span></code></pre></div></div>
+<p>The <code>DATE</code> field represents the date in year-month-day format, followed by an uppercase T for the current time. <code>DATE</code> also serves as the unique identifier of each note file.</p>
+<p>The <code>SIGNATURE</code> field contains an alphanumeric string. A signature has no predefined purpose; it is defined by the user. One possible use is to establish ordering relationships between files, such as 1, 1a, 1b, 1b1, 1b2, and so on.</p>
+<p>The <code>TITLE</code> field is lowercase by default and uses hyphens.</p>
+<p>The <code>KEYWORDS</code> field consists of one or more entries separated by underscores; when entering <code>KEYWORDS</code>, use commas as separators.</p>
+<p>Examples:</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-css">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">20220610T043241--initial-thoughts-on-the-zettelkasten-method__notetaking</span><span class="p">.</span><span class="nc">org</span>
+</span></span><span class="line"><span class="cl"><span class="nt">20220610T062201--define-custom-org-hyperlink-type__denote_emacs_package</span><span class="p">.</span><span class="nc">md</span>
+</span></span><span class="line"><span class="cl"><span class="nt">20220610T162327--on-hierarchy-and-taxis__notetaking_philosophy</span><span class="p">.</span><span class="nc">txt</span></span></span></code></pre></div></div>
+<p><code>denote-prompts</code> can be configured in the following forms:</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-sql">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="nb">DATE</span><span class="p">.</span><span class="n">EXT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nb">DATE</span><span class="c1">--TITLE.EXT
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">DATE__KEYWORDS</span><span class="p">.</span><span class="n">EXT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nb">DATE</span><span class="o">==</span><span class="n">SIGNATURE</span><span class="p">.</span><span class="n">EXT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nb">DATE</span><span class="o">==</span><span class="n">SIGNATURE</span><span class="c1">--TITLE.EXT
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nb">DATE</span><span class="o">==</span><span class="n">SIGNATURE</span><span class="c1">--TITLE__KEYWORDS.EXT
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nb">DATE</span><span class="o">==</span><span class="n">SIGNATURE__KEYWORDS</span><span class="p">.</span><span class="n">EXT</span></span></span></code></pre></div></div>
+<h2 id="linking-notes">Linking Notes</h2>
+<p><code>denote</code> provides several commands for creating links between notes.</p>
+<p>All linked files must be Denote files; other files cannot be recognized.</p>
+<h3 id="adding-a-single-link">Adding a single link</h3>
+<p>The <code>denote-link</code> command selects a file in the minibuffer and inserts it into the current file as a link. The link format depends on whether the current file is Org or Markdown.</p>
+<p>In Org files, links to headings are also supported through the <code>denote-org-store-link-to-heading</code> command. Other file formats are not supported.</p>
+<p>When <code>denote-link</code> is called with a prefix argument (<code>C-u</code> by default), it sets the link to the <code>[[denote:IDENTIFIER]]</code> format regardless of file type.</p>
+<p>By default, the link description is determined as follows:</p>
+<h3 id="the-denote-org-store-link-to-heading-user-option">The <code>denote-org-store-link-to-heading</code> user option</h3>
+<p>The option <code>denote-org-store-link-to-heading</code> determines whether <code>org-store-link</code> links to the current heading in an Org file.</p>
+<p><code>org-store</code> stores the current link so it can later be inserted with <code>org-insert-link</code>, and the <code>denote-org-store-link-to-heading</code> option affects this command.</p>
+<p>When this option is non-<code>nil</code>, <code>org-store-link</code> stores the link to the current heading instead of the Denote file itself.</p>
+<p>If the heading does not have a <code>CUSTOM_ID</code>, Denote creates a <code>PROPERTIES</code> drawer and includes it in the heading. If a <code>CUSTOM_ID</code> already exists, <code>org-store-link</code> uses it as is.</p>
+<h3 id="inserting-a-link-to-a-heading-inside-an-org-file">Inserting a link to a heading inside an Org file</h3>
+<p>As part of the <code>denote-org-extras.el</code> extension, <code>denote-org-extras-link-to-heading</code> provides links to headings inside Org files.</p>
+<p>The link takes this form:</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-lua">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="s">[[denote:IDENTIFIER::#ORG-HEADING-CUSTOM-ID]]</span><span class="p">[</span><span class="n">Description</span><span class="p">::</span><span class="nl">Heading</span> <span class="nl">text</span><span class="err">]]</span></span></span></code></pre></div></div>
+<h3 id="inserting-links-that-match-a-regular-expression">Inserting links that match a regular expression</h3>
+<p>The command <code>denote-add-links</code> adds multiple links that match a regular expression. These links are inserted as a list, for example:</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-diff">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl"><span class="gd">- link1
+</span></span></span><span class="line"><span class="cl"><span class="gd">- link2
+</span></span></span><span class="line"><span class="cl"><span class="gd">- link3
+</span></span></span></code></pre></div></div>
+<p>Examples of usable regular expressions:</p>
+<ul>
+<li><code>journal</code> matches all notes whose title contains <code>journal</code>.</li>
+<li><code>_journal</code> matches all notes whose keyword is <code>journal</code>.</li>
+<li><code>^2022.*_journal</code> matches all notes that start with <code>2022</code> and contain the keyword <code>journal</code>.</li>
+<li><code>\.txt</code> matches files with the <code>txt</code> extension.</li>
+</ul>
+<h3 id="linking-to-an-existing-note-or-creating-a-new-one">Linking to an existing note or creating a new one</h3>
+<p>In a note-taking workflow, you may be developing one topic and want to connect it to another. Denote provides several convenient commands:</p>
+<ul>
+<li>
+<p><code>denote-link-after-creating</code></p>
+<p>Create a new note in the background and link to it directly.</p>
+</li>
+<li>
+<p><code>denote-link-after-creating-with-command</code></p>
+<p>This command is similar to the previous one, but it prompts for the command used to create the note.</p>
+</li>
+<li>
+<p><code>denote-link-or-create</code></p>
+<p>Use <code>denote-link</code> on the target file, creating it if necessary.</p>
+</li>
+</ul>
+<h3 id="the-backlinks-buffer">The backlinks buffer</h3>
+<p><code>denote-backlinks</code> generates a custom buffer that shows backlinks to the current note. A backlink is a link that points back to the current entry.</p>
+<p>By default, the backlinks buffer is designed to show the names of files that contain annotations linked to the current entry. Each file name is displayed on its own line.</p>
+<p>text</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-lua">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">Backlinks</span> <span class="n">to</span> <span class="s2">&#34;On being honest&#34;</span> <span class="p">(</span><span class="mi">20220614</span><span class="n">T130812</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">20220614</span><span class="n">T145606</span><span class="c1">--let-this-glance-become-a-stare__journal.txt</span>
+</span></span><span class="line"><span class="cl"><span class="mi">20220616</span><span class="n">T182958</span><span class="c1">--feeling-butterflies-in-your-stomach__journal.txtx</span></span></span></code></pre></div></div>
+<p>The backlinks buffer uses Emacs&rsquo; built-in Xref infrastructure. On some operating systems, users may need to add certain executables to the relevant environment variables.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-03-28</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/en/posts/how-to-use-denote/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/en/posts/how-to-use-denote/" data-title="How to Use Denote" data-hashtags="denote,Emacs,orgmode"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/en/posts/how-to-use-denote/" data-title="How to Use Denote"><i class="fab fa-threads" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/en/posts/how-to-use-denote/" data-title="How to Use Denote"><i class="fab fa-weibo" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/en/posts/how-to-use-denote/" data-title="How to Use Denote" data-description="Notes on several ways to use Denote"><i class="fab fa-diaspora" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fen%2fposts%2fhow-to-use-denote%2f&amp;text=How%20to%20Use%20Denote" target="_blank" title="Share on Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/en/tags/denote/">Denote</a>,&nbsp;<a href="/en/tags/emacs/">Emacs</a>,&nbsp;<a href="/en/tags/orgmode/">Orgmode</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/en/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/en/posts/opensuse-tumbleweed-kde-installation-notes/" class="next" rel="next" title="My openSUSE Tumbleweed and KDE Installation Notes">My openSUSE Tumbleweed and KDE Installation Notes<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.131.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2021 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://vkvk17.github.io" target="_blank">vkvk17</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/contrib/auto-render.min.js"></script><script src="/lib/katex/contrib/copy-tex.min.js"></script><script src="/lib/katex/contrib/mhchem.min.js"></script><script>window.config={"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script src="/js/theme.min.js"></script></body>
+</html>

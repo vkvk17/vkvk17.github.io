@@ -257,3 +257,38 @@ Just as governments use laws to hold citizens accountable, you can create a habi
 |**Inversion of the fourth law: Make it unsatisfying**|4.5|Find an accountability partner. Ask someone to supervise your behavior|
 ||4.6|Create a habit contract. Make the consequences of a bad habit public and painful|
 
+## Advanced Tactics: How to Evolve From Merely Good to Truly Great
+
+### Talent, Genetics and Habits
+The secret to maximizing your odds of success is picking the right arena in which to compete.
+
+Choose the right habits, and progress comes effortlessly. Choose the wrong ones, and life becomes an uphill struggle at every turn.
+
+Genetics are hard to alter. They grant you formidable advantages in favorable environments, yet impose distinct disadvantages when circumstances work against you.
+
+When your habits align with your natural talents, building and sustaining those habits comes naturally. Pick the habits that suit you best.
+
+Choose pursuits that let your strengths shine. If you cannot find one, create your own.
+
+Genetics do not eliminate the need for hard work. They only act as a filter, showing us what we ought to devote our efforts to.
+
+### Burnout Is the Critical Risk
+The Goldilocks Rule states that people maintain peak motivation when tackling tasks within their reach.
+
+The greatest threat to success is not failure, but burnout.
+
+As habits turn into routine, they grow less engaging and rewarding. Boredom creeps in.
+
+Anyone can grind away when motivated. Only the elite keep pushing forward when the work loses its thrill.
+
+Professionals stick rigidly to their set plans; amateurs drift along, acting on whims.
+
+### The Hidden Downsides of Cultivating Good Habits
+The upside of habits is that we can act on autopilot. The downside is that we stop noticing minor mistakes.
+
+Habitual execution + Deliberate practice = Mastery
+
+Reflection and review form a process that keeps you attuned to your own performance at all times.
+
+The more deeply we cling to a fixed self-image, the harder it becomes to grow beyond it.
+
